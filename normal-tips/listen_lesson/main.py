@@ -1,9 +1,11 @@
-import gtk.gdk  
+# import gtk.gdk
 import cv2
 import matplotlib.pyplot as plt
 from pymouse import PyMouse
 from pykeyboard import PyKeyboard
 import time
+import sys
+from PyQt4.QtGui import QPixmap, QApplication
 
 import numpy as np
 # a = cv2.imread('screenshot.png', 0)
@@ -23,12 +25,15 @@ kernel = cv2.imread("pt.png", 0)
 kernel = kernel[430:460, 696:710]
 m = PyMouse()
 
-w = gtk.gdk.get_default_root_window()  
-sz = w.get_size()  
+# w = gtk.gdk.get_default_root_window()
+# sz = w.get_size()
 while(True):
-    pb = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB,False,8,sz[0],sz[1])
-    pb = pb.get_from_drawable(w,w.get_colormap(),0,0,0,0,sz[0],sz[1])
-    pb.save("screenshot.png","png")
+    # pb = gtk.gdk.Pixbuf(gtk.gdk.COLORSPACE_RGB,False,8,sz[0],sz[1])
+    # pb = pb.get_from_drawable(w,w.get_colormap(),0,0,0,0,sz[0],sz[1])
+    # pb.save("screenshot.png","png")
+
+    app = QApplication(sys.argv)
+    QPixmap.grabWindow(QApplication.desktop().winId()).save('screenshot.png', 'png')
 
     screenshot = cv2.imread("screenshot.png", 0)
     # # kernel = screenshot[430:460, 696:710]
@@ -43,28 +48,3 @@ while(True):
         m.click(y, x, 1)
     # k.type_string('Hello, World!')
     time.sleep(30)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
