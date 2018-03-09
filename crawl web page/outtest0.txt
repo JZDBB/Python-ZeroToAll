@@ -1,0 +1,449 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="publishid" content="1122266298.12.103.0"/><meta name="pageid" content="11307.11100.0.0.11150107.0.0.0.0.0.113387.1122266298"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" />
+<meta name="keywords" content="委内瑞拉,最高法院
+" />
+<meta name="description" content="委内瑞拉捣毁袭击最高法院大楼的恐怖组织
+---委内瑞拉政府１５日证实，当局已成功捣毁去年武装袭击委最高法院大楼的恐怖组织。" />
+<script src="http://www.xinhuanet.com/global/js/pageCore.js"></script>
+<title>
+委内瑞拉捣毁袭击最高法院大楼的恐怖组织-新华网
+</title>
+<link rel="stylesheet" href="http://www.xinhuanet.com/global/public/css/common.css" />
+<link rel="stylesheet" href="http://www.xinhuanet.com/global/css/swiper2.min.css" />
+<link rel="stylesheet" type="text/css" href="http://www.newsres.cn/xl2017/css/main.css" />
+<style>
+.nav { z-index:999;}
+.h-p2 .qz {display: none;}
+.news-link a {color: #348CEC!important;font-size: 12px!important;}
+</style>
+<script type="text/javascript" src="http://www.xinhuanet.com/global/js/jquery.min.js"></script>
+<!--访问量通用js设置-->
+<script type="text/javascript">
+//锁定域名
+document.domain="xinhuanet.com";
+</script>
+<script src="http://www.xinhuanet.com/video/static/videovisit.js"></script>
+<!--访问量通用js设置-->
+</head>
+<body class="" name="">
+<script type="text/javascript">
+var isMobile = (/iPad|iPhone|Android|Windows Phone|Nokia/).test(navigator.userAgent);
+if(isMobile){
+	document.getElementsByTagName("body")[0].style.display = "none";
+}
+</script>
+<div class="nav">
+<div class="nav-wap">
+<a href="#" class="logo left"></a>
+<div class="nav-carousel">
+<div class="gotrain-container nav-ul"><span><a href="http://m.xinhuanet.com/2018-01/16/c_1122266298.htm" target="_blank">委内瑞拉捣毁袭击最高法院大楼的恐怖组织</a></span><span><a href="http://m.xinhuanet.com/2018-01/16/c_1122266290.htm" target="_blank">伊朗司法总监抨击美国对伊制裁</a></span><span><a href="http://m.xinhuanet.com/2018-01/16/c_1122266283.htm" target="_blank">哥伦比亚一在建桥梁垮塌 至少１０人死亡</a></span><span><a href="http://m.xinhuanet.com/2018-01/16/c_1122266280.htm" target="_blank">通讯：火山喷发后的印尼巴厘岛盼望中国游客重返</a></span><span><a href="http://m.xinhuanet.com/2018-01/16/c_1122266271.htm" target="_blank">斯洛文尼亚严厉查处驾车使用手机行为</a></span><span><a href="http://m.xinhuanet.com/2018-01/16/c_1122266266.htm" target="_blank">火星中纬度发现８处浅层“地下冰库”</a></span><span><a href="http://m.xinhuanet.com/2018-01/16/c_1122266263.htm" target="_blank">巴解组织：暂停承认以色列国 既往协议不再有效</a></span><span><a href="http://m.xinhuanet.com/2018-01/16/c_1122266248.htm" target="_blank">江苏：金融支持制造业</a></span><span><a href="http://m.xinhuanet.com/2018-01/16/c_1122266247.htm" target="_blank">德国捐献器官人数创新低　</a></span><span><a href="http://www.xinhuanet.com/fortune/2018-01/16/c_1122266233.htm" target="_blank">王瑞元：调和油优于单一植物油</a></span></div> 
+</div>
+<ul class="nav-op roedeer-container">
+<li class="nav-khd">客户端</li>
+<li class="nav-ss">搜索</li>
+<li class="nav-pd">频道</li>
+</ul>
+<a class="nav-next next-news" href="#">
+<div class="nav-n-n">下一篇</div>
+<div class="nav-n-t next-news-name ellipsis"></div>
+</a>
+<div class="nav-hide-op roedeer-links-container">
+<div class="nav-khd"></div>
+<div class="nav-ss">
+<input type="text" placeholder="输入要查找的新闻标题或关键字" id="kw" />
+<a href="javascript:void(0);" class="search"></a> 
+</div>
+<div class="nav-pd">
+<script src="http://www.xinhuanet.com/global/js/detailNav2017.js"></script> 
+</div>
+</div>
+</div>
+</div>
+<div class="header">
+<div class="h-p1">
+<div class="news-link">
+<!--广告ad-旗帜-顶部文字链三--> 
+<ins data-ycad-slot="758"></ins> 
+<!--广告ad-旗帜-顶部文字链二--> 
+<ins data-ycad-slot="757"></ins> 
+<!--广告ad-旗帜-顶部文字链一--> 
+<ins data-ycad-slot="756"></ins> 
+</div>
+<div class="news-position"> <a href="http://www.xinhuanet.com/" target="_blank">新华网</a> <a href=""></a> 正文 </div>
+</div>
+<iframe src="http://www.xinhuanet.com/ad/20180112_1200/index/1200.htm" style="width: 1200px; height: 100px; display: block; margin:10px auto 10px auto; border:0;"></iframe>
+<div class="h-p2">
+<!--广告ad-通栏一-->
+<div class="h-p2-ad3"> <ins data-ycad-slot="396"></ins> </div>
+<!--广告ad-旗帜-时政类频道-->
+<div class="qz sz-ad"><ins data-ycad-slot="391"></ins></div>
+<!--广告ad-旗帜-财经类频道-->
+<div class="qz cj-ad"><ins data-ycad-slot="755"></ins></div>
+<!--广告ad-旗帜-国际类频道-->
+<div class="qz jr-ad"><ins data-ycad-slot="754"></ins></div>
+</div>
+<div class="h-p3 clearfix">
+<a href="http://www.xinhuanet.com/" class="net-logo" target="_blank"> <img src="http://www.newsimg.cn/xl2017/images/net_logo.png" /> </a>
+<div class="h-news">
+<div class="h-title">
+委内瑞拉捣毁袭击最高法院大楼的恐怖组织 
+</div>
+<div class="h-info">
+<span class="h-time"> 2018-01-16 13:10:25</span> 
+<span>
+来源： 
+<em id="source"> 新华网</em> 
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="main">
+<div class="part part1 clearfix" id="">
+<div class="fllow1-wap left">
+<div class="p-left left" id="fllow1">
+<div class="s-ewm">
+<img src="http://www.newsimg.cn/xl2017/images/wx.png" />
+<div>关注新华网</div>
+</div>
+<div class="s-item share-wx-item"> <a class="s-wx share-wx" href="javascript:void(0);"></a> 微信 </div>
+<div class="wx-ewm"><img src="" /></div>
+<div class="s-item"> <a class="s-wb share-wb" href="javascript:void(0);"></a> 微博 </div>
+<div class="s-item"> <a class="s-q share-q" href="javascript:void(0);"></a> Qzone </div>
+<a class="s-bottom" href="#news-com-location">
+<div class="s-num"></div>
+评论 
+</a>
+</div>
+</div>
+<div class="p-right left">
+<div id="p-detail">
+<div class="video-url" style="display:none">
+
+</div>
+<div class="lb">
+<div class="standard_lb">
+<span class="tj">图集</span> <span class="origin"></span>
+<div class="swiper-container2" id="swiperContainer2">
+<div class="swiper-wrapper"> </div>
+<div class="swiper-pagination"></div>
+<div class="swiper_arrow arrow_left s_arrow_left"></div>
+<div class="swiper_arrow arrow_right s_arrow_right"></div>
+<div class="swiper-scrollbar"></div>
+<span class="lb-left s_arrow_left"></span> <span class="lb-right s_arrow_right"></span> 
+</div>
+</div>
+</div>
+<p>　　新华社加拉加斯１月１５日电（记者 徐烨　王瑛）委内瑞拉政府１５日证实，当局已成功捣毁去年武装袭击委最高法院大楼的恐怖组织。</p>
+<p>　　委内瑞拉内政部当天发布公告说，委特种部队在位于首都加拉加斯西部郊区的一条公路上与委前警官奥斯卡·佩雷斯为首的恐怖组织成员交火，５名恐怖组织成员被逮捕，还有的被击毙。但公告没有说明佩雷斯本人是否被击毙。交火还导致２名军人死亡，５名军人受重伤。</p>
+<p>　　公告还说，特种部队是在与该恐怖组织进行谈判要求其投降时受到了攻击，该恐怖组织成员在交火中使用了重型武器和汽车炸弹。</p>
+<p>　　２０１７年６月２７日，佩雷斯驾驶一架偷来的直升机向委内瑞拉最高法院、内政和司法部大楼等建筑开枪射击，并向最高法院大楼投下手榴弹后逃逸。委总统马杜罗随后说，这起袭击事件是反对派策划的“恐怖袭击”。</p>
+<div class="zan-wap">
+<a href="javascript:void(0);" class="zan"> </a>
+<div class="zan-i">+1</div>
+<div class="zan-v"> <span></span> </div>
+</div>
+<div class="p-tags" id="">
+<div class="p-kwap"></div>
+<span class="p-jc">
+<span class="tiyi1">
+<a href="javascript:void(0);" class="advise">【纠错】</a>
+<div class="tiyi01" id="advisebox01" style="display:none">
+<div>
+<iframe id="jc_link1" style="width:600px;height:350px; float:left;" border="0" name="search" marginwidth="0" framespacing="0" marginheight="0" frameborder="0" noresize="" scrolling="no" vspale="0"></iframe>
+</div>
+<div class="tiyi03">
+<div id="jc_close1" style="cursor:pointer"><img src="http://www.xinhuanet.com/images/syicon/space.gif" width="24" height="24" border="0" /></div>
+</div>
+</div>
+</span>
+责任编辑： 
+潘子荻 
+</span>
+</div>
+</div>
+<div class="l-ad-1">
+<!--广告ad-旗帜-通栏二--> 
+<ins data-ycad-slot="397"></ins> 
+</div>
+<div class="relate-news">
+<div class="column-name">相关<span>新闻</span></div>
+<ul class="relate-news-wap">
+<li>
+<a href="http://www.xinhuanet.com/world/2018-01/11/c_1122244453.htm" target="_blank">委内瑞拉制宪大会成员遇刺身亡</a>
+<div class="r-des"> 委内瑞拉新闻部长罗德里格斯１０日说，委制宪大会成员托马斯·卢塞纳当日在遭不明武装人员刺杀后身亡，当局已对此展开调查。 </div>
+<div class="r-in">	<span class="publish-time"> 2018-01-11 13:35:39</span>	<span class="r-dis"></span>	</div>
+</li>
+<li>
+<a href="http://www.xinhuanet.com/world/2018-01/08/c_129784963.htm" target="_blank">委内瑞拉政府下令部分商品降价 超市被民众抢购一空</a>
+<div class="r-des"> 1月6日，委内瑞拉加拉加斯，马杜罗政府对物价进行调控，下令全国26个连锁超市对部分商品进行降价，消息一经发出后，民众纷纷涌入超市，排队抢购商品。 </div>
+<div class="r-in">	<span class="publish-time"> 2018-01-08 07:55:59</span>	<span class="r-dis"></span>	</div>
+</li>
+</ul>
+<div class="l-ad-1">
+<!--广告ad-旗帜-通栏三--> 
+<ins data-ycad-slot="398"></ins> 
+</div>
+<div class="l-ad-1">
+<!--广告ad-银城广告--> 
+<ins data-ycad-slot="917"></ins>
+</div>
+<div class="news-com" id="news-com">
+<div class="column-name" id="news-com-name">
+新闻<span>评论</span>
+<div id="news-com-location"></div>
+</div>
+<!--评论-->
+<div class="news-com-wap">
+<script type="text/javascript">
+window.xhnc_commentOption = window.xhnc_commentOption||{style:'new'};
+</script>
+<div>
+<script type="text/javascript" src="http://tmisc.home.news.cn/nc/jxhremote-min.js"></script> 
+</div>
+</div>
+</div>
+<div class="l-ad-1" id="l-ad-1">
+<!--广告ad-旗帜-通栏四--> 
+<ins data-ycad-slot="399"></ins>
+<div class="" id="locat"></div>
+</div>
+<div class="l-ad-1">
+<!--广告ad-银城广告--> 
+<ins data-ycad-slot="917"></ins>
+</div>
+</div>
+</div>
+</div>
+<img src="http://www.newsimg.cn/xl2017/images/bg6.jpg" class="bg6" id="bg6" />
+<div class="part part2 clearfix" id="">
+<div class="p2-nav-wap left">
+<div class="p-left" id="p2-nav">
+<ul>
+</ul>
+</div>
+</div>
+<div class="p-right left" id="part2-list">
+<ul id="">
+</ul>
+<div class="more-2">加载更多</div>
+</div>
+</div>
+<div class="fllow3-wap">
+<div class="part-right" id="fllow3">
+<div class="ad" style="height:250" ad-height="250">
+<!--广告ad-旗帜-画中画一--> 
+<ins data-ycad-slot="392"></ins> 
+</div>
+<div class="ad" style="height:250" ad-height="250">
+<!--广告ad-旗帜-画中画二--> 
+<ins data-ycad-slot="393"></ins> 
+</div>
+<ul class="right-wap hot-news">
+<div class="name">热帖</div>
+<li>
+<a href="http://sike.news.cn/hot/zongli/index.html" target="_blank">征集丨2018“我向总理说句话”网民建言</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2018-01-14 10:53:24</div>
+</div>
+</li>
+<li>
+<a href="http://www.xinhuanet.com/forum/jrht/index.html?zt=141476015132" target="_blank">“数字代沟”凸显，家长如何应对？</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2018-01-16 11:18:56</div>
+</div>
+</li>
+<li>
+<a href="http://www.xinhuanet.com/forum/topic/zhuanti/20181/iframe_1100.html" target="_blank">盘点那些国人登上国际大奖领奖台的历史性时刻</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2018-01-16 11:18:56</div>
+</div>
+</li>
+<li>
+<a href="http://forum.home.news.cn/detail/141476163/1.html" target="_blank">异地就医直接结算为什么要“先备案”？</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2018-01-16 11:18:56</div>
+</div>
+</li>
+<li>
+<a href="http://forum.home.news.cn/detail/141476174/1.html" target="_blank">@医护人员，公立医院薪酬制度改革试点扩大了！</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2018-01-16 11:18:56</div>
+</div>
+</li>
+</ul>
+<div class="xuanshi">
+<div class="name"> <span class="x-xt active" name="i-xt">炫图</span> <span class="x-sp" name="i-sp">视频</span> </div>
+<ul class="right-wap xs i-xt">
+<li>
+<a href="http://www.xinhuanet.com/photo/2018-01/16/c_1122265324.htm" target="_blank">
+<img src="http://m.xinhuanet.com/titlepic/1122265374_1516068786678_title1n.jpg" />		
+<div>哥伦比亚一在建桥梁发生坍塌</div>
+</a>
+</li>
+<li>
+<a href="http://www.xinhuanet.com/photo/2018-01/16/c_1122263394.htm" target="_blank">
+<img src="http://m.xinhuanet.com/titlepic/1122263769_1516061580107_title1n.jpg" />		
+<div>加拿大发行中国狗年生肖邮票</div>
+</a>
+</li>
+</ul> 
+<ul class="right-wap xs i-sp">
+<li>
+<a href="http://www.xinhuanet.com/video/2018-01/16/c_129791536.htm" target="_blank">
+<img src="http://m.xinhuanet.com/titlepic/1122263537_1516060143374_title1n.jpg" />		
+<div>最美自驾游线有望通车</div>
+</a>
+</li>
+<li>
+<a href="http://www.xinhuanet.com/video/2018-01/16/c_129791525.htm" target="_blank">
+<img src="http://m.xinhuanet.com/titlepic/1122263524_1516060056585_title1n.jpg" />		
+<div>6岁快递男孩后续</div>
+</a>
+</li>
+</ul> 
+</div>
+<div class="ad">
+<!--广告ad-旗帜-画中画三--> 
+<ins data-ycad-slot="394"></ins> 
+</div>
+<div class="right-wap hot-word">
+<div class="name">热词</div>
+</div>
+<div class="hot-words">
+<a href="https://baike.baidu.com/item/%E8%8C%85%E5%8F%B0%E9%85%92/198987?sefr=xinhuawang" target="_blank">茅台酒</a><a href="https://baike.baidu.com/item/%E6%B5%81%E8%A1%8C%E6%80%A7%E6%84%9F%E5%86%92/273256?sefr=xinhuawang" target="_blank">流行性感冒</a><a href="https://baike.baidu.com/item/%E7%94%B5%E4%BF%A1%E8%AF%88%E9%AA%97/6590062?sefr=xinhuawang" target="_blank">电信诈骗</a><a href="https://baike.baidu.com/item/%E5%BD%B1%E5%AD%90%E9%93%B6%E8%A1%8C/68282?sefr=xinhuawang" target="_blank">影子银行</a><a href="https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E7%8E%AF%E4%BF%9D%E7%9D%A3%E5%AF%9F%E7%BB%84/19753152?sefr=xinhuawang" target="_blank">中央环保督察组</a><a href="https://baike.baidu.com/item/%E6%B7%B1%E5%9C%B3%E4%B8%87%E9%A1%BA%E5%8F%AB%E8%BD%A6%E4%BA%91%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/20362143?sefr=xinhuawang" target="_blank">深圳万顺叫车云信息技术有限公司</a><a href="https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/343664?sefr=xinhuawang" target="_blank">陈小武</a><a href="https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/343664?sefr=xinhuawang" target="_blank">网络安全</a><a href="https://baike.baidu.com/item/%E8%8A%B1%E6%A4%92%E7%9B%B4%E6%92%AD/19097792?sefr=xinhuawang" target="_blank">花椒直播</a><a href="https://baike.baidu.com/item/%E9%98%BF%E5%9C%9F%E5%88%97%E5%B0%94%E6%9D%91/13981071?sefr=xinhuawang" target="_blank">阿土列尔村</a> 
+</div>
+<div class="ad-last" style="width: 100%; height: 250px">
+<!--广告ad-旗帜-画中画四--> 
+<ins data-ycad-slot="753"></ins> 
+</div>
+</div>
+</div>
+</div>
+<div class="bottom" id="bottom">
+<div class="bottom-ad">
+<a href="http://www.xinhuanet.com/photo/2018-01/15/c_129791378.htm" target="_blank">
+<img src="../../titlepic/129791378_1220512629_title1n.jpg" alt="台北河滨公园花团锦簇" />  
+<div>台北河滨公园花团锦簇</div>
+</a>
+<a href="http://www.xinhuanet.com/photo/2018-01/15/c_129791375.htm" target="_blank">
+<img src="../../titlepic/129791375_1220512615_title1n.jpg" alt="中巴首次北印度洋联合考察全面展开" />  
+<div>中巴首次北印度洋联合考察全面展开</div>
+</a>
+<a href="http://www.xinhuanet.com/photo/2018-01/15/c_129791373.htm" target="_blank">
+<img src="../../titlepic/129791373_1220512607_title1n.jpg" alt="热带雨林 百鸟家园" />  
+<div>热带雨林 百鸟家园</div>
+</a>
+<a href="http://www.xinhuanet.com/photo/2018-01/15/c_129791372.htm" target="_blank">
+<img src="../../titlepic/129791372_1220512591_title1n.jpg" alt="鹤舞盐城湿地" />  
+<div>鹤舞盐城湿地</div>
+</a> 
+</div>
+<div class="bottom-next"> <a class="next-news" href="#"><span class="next-news-name"></span></a> </div>
+</div>
+<div class="seo" style="display:none">
+<a href="http://m.news.cn/video/2018-01/15/c_129790732.htm">辽宁沈阳：大熊猫雪地撒欢 萌态十足</a><a href="http://m.news.cn/video/2018-01/15/c_129790730.htm">新疆塔城玛依塔斯遭遇强风吹雪</a><a href="http://m.news.cn/video/2018-01/15/c_129790729.htm">有惊无险 土耳其一客机降落时险些坠海</a><a href="http://m.news.cn/video/2018-01/15/c_129790727.htm">拍照新玩法 3D打印迷你真人模型</a><a href="http://m.news.cn/video/2018-01/15/c_129790725.htm">流感要及时就诊 避免引发并发症</a><a href="http://m.news.cn/video/2018-01/15/c_129790719.htm">“龙”货运飞船“载货”返回地球</a><a href="http://m.news.cn/video/2018-01/15/c_129790718.htm">海军：陆战队远程机动跨昼夜实弹射击</a><a href="http://m.news.cn/video/2018-01/15/c_129790714.htm">菲火山“高度活动” 或于近日喷发</a><a href="http://m.news.cn/video/2018-01/15/c_129790710.htm">丑闻曝光 俄监狱内竟现“VIP牢房”</a><a href="http://m.news.cn/video/2018-01/14/c_129790258.htm">湖北：大学创新考试获点赞 学生自己出题考自己</a> 
+</div>
+<div class="footer">
+<div class="f-link clearfix">
+<div class="f-logo"></div>
+<div class="f-nav">
+<script src="http://www.xinhuanet.com/global/js/detailNav2017.js"></script> 
+</div>
+</div>
+<div class="copyright">
+<div class="right">
+<span>关注我们</span> 
+<a href="javascript:void(0);" class="f-wx">
+<div class="c-wx"></div>
+</a>
+<a href="http://weibo.com/newsxh" class="f-wb" target="_blank"></a> <a href="http://www.news.cn/2015/xhcppub/xhsxw/index.html" class="f-ewm" target="_blank"></a> 
+</div>
+<div class="left">
+<div class="c-link"> <a href="http://203.192.6.89/xhs/" target="_blank">新华社简介</a> <a href="http://www.xinhuanet.ltd/" target="_blank">公司官网</a> <a href="http://www.xinhuanet.com/company/contact-us.htm" target="_blank">联系我们</a> <a href="http://www.news.cn/linktous.htm" target="_blank">我要链接</a> <a href="http://www.xinhuanet.com/company/copyright.htm " target="_blank">版权声明</a> <a href="http://www.xinhuanet.com/company/legal.htm " target="_blank">法律顾问</a> <a href="http://www.news.cn/xwhggfw/index.htm" target="_blank">广告服务</a> <a href="http://www.news.cn/jsfw/index.html" target="_blank" class="last-child">技术服务中心</a> </div>
+<div class="c-bq">
+<script src="http://www.xinhuanet.com/global/public/pcFooter.js"></script> 
+</div>
+</div>
+</div>
+</div>
+<script src="http://www.xinhuanet.com/global/js/swiper2.min.js"></script> 
+<script type="text/javascript" src="http://www.newsres.cn/xl2017/js/main_v2.js"></script> 
+<!--微信分享图功能-->
+<div class="share-title" style="display:none">
+委内瑞拉捣毁袭击最高法院大楼的恐怖组织
+</div>
+<div class="share-substr" style="display:none"></div>
+<img class="share-img" style="display:none" src="http://www.newsimg.cn/common/share/logo4share.jpg" width="300" height="300" /> 
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+<script src="http://www.xinhuanet.com/global/public/wxShare.js"></script> 
+<!--微信分享图功能--> 
+﻿<script type="text/javascript">
+$(function(){
+	window["_BFD"] = window["_BFD"] || {};
+	
+	var p_all = $("meta[name=pageid]").attr("content");
+	var p_keyword = $("meta[name=keywords]").attr("content");
+	var p_ids=p_all.split(".");
+	var p_cat = p_ids[0];
+	
+	
+	_BFD.BFD_INFO = {	
+		"iid" : "",    
+		"url" : "http://www.xici.net/d187159548.htm",  
+		"title" : '委内瑞拉捣毁袭击最高法院大楼的恐怖组织',  
+		"ptime" : '2018-01-16 13:10:25',  
+		"vcnt" : "666",   
+		"source" : '新华网',   
+		"typ" : "新闻",  		
+		"author" : '徐烨',   
+		"cat" : p_cat,  
+		"attr" : {"pt":"文本","th":"新闻报道","ni":"频道"},   
+		"tag" : p_keyword,   
+		"pic" : "",   
+		"ccnt" : "666", 
+		"abs" : '委内瑞拉政府１５日证实，当局已成功捣毁去年武装袭击委最高法院大楼的恐怖组织。', 
+		"loc" : "",
+		"user_id" : "",
+		"page_type" : "detail" 
+	};
+})
+</script> 
+<script type="text/javascript">
+window["_BFD"] = window["_BFD"] || {};
+_BFD.client_id = "Cxhw";
+_BFD.BFD_USER = {	
+		"user_id" : "123456",
+};
+_BFD.script = document.createElement("script");
+_BFD.script.type = "text/javascript";
+_BFD.script.async = true;
+_BFD.script.charset = "utf-8";                                                  
+_BFD.script.src = (('https:'==document.location.protocol?'https://':'http://')+'bd.xinhuanet.com/xinhuawang.js');  
+document.getElementsByTagName("head")[0].appendChild(_BFD.script);
+</script>
+<!--ad_广告--> 
+<script type="text/javascript">
+var isMobile=(function(){if(navigator.userAgent.match(/mobile/i)) return true})();
+if(isMobile){
+    // wap 端 不显示广告
+}
+else{
+	document.write("<ins data-ycad-slot=\"395\"></ins>");//ad_流媒体
+}
+</script> 
+<script type="text/javascript" src="//a2.xinhuanet.com/js/xadndelayed.js"></script>
+<div style="display:none"><div id="fwl">010160000000000000000000011124031122266298</div><script type="text/javascript" src="http://webd.home.news.cn/webdig.js?z=1"></script><script type="text/javascript">wd_paramtracker("_wdxid=010160000000000000000000011124031122266298")</script><noscript><img src="http://webd.home.news.cn/1.gif?z=1&_wdxid=010160000000000000000000011124031122266298" border="0" /></noscript></div>   </body>
+</html>

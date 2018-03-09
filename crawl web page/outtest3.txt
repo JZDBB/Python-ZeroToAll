@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="publishid" content="129778206.11.103.0"/><meta name="pageid" content="11307.1164.0.0.11145726.0.0.0.0.0.11702.129778206"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" />
+<meta name="keywords" content="爆炸,圣彼得堡,俄罗斯,发生,普京
+" />
+<meta name="description" content="普京称圣彼得堡超市爆炸是恐怖袭击
+---俄罗斯总统普京２８日表示，２７日发生在俄罗斯圣彼得堡一超市的爆炸事件是恐怖袭击。" />
+<script src="http://www.xinhuanet.com/global/js/pageCore.js"></script>
+<title>
+普京称圣彼得堡超市爆炸是恐怖袭击-新华网
+</title>
+<link rel="stylesheet" href="http://www.xinhuanet.com/global/public/css/common.css" />
+<link rel="stylesheet" href="http://www.xinhuanet.com/global/css/swiper2.min.css" />
+<link rel="stylesheet" type="text/css" href="http://www.newsres.cn/xl2017/css/main.css" />
+<style>
+.nav { z-index:999;}
+.h-p2 .qz {display: none;}
+.news-link a {color: #348CEC!important;font-size: 12px!important;}
+</style>
+<script type="text/javascript" src="http://www.xinhuanet.com/global/js/jquery.min.js"></script>
+<!--访问量通用js设置-->
+<script type="text/javascript">
+//锁定域名
+document.domain="xinhuanet.com";
+</script>
+<script src="http://www.xinhuanet.com/video/static/videovisit.js"></script>
+<!--访问量通用js设置-->
+</head>
+<body class="" name="">
+<script type="text/javascript">
+var isMobile = (/iPad|iPhone|Android|Windows Phone|Nokia/).test(navigator.userAgent);
+if(isMobile){
+	document.getElementsByTagName("body")[0].style.display = "none";
+}
+</script>
+<div class="nav">
+<div class="nav-wap">
+<a href="#" class="logo left"></a>
+<div class="nav-carousel">
+<div class="gotrain-container nav-ul"><span><a href="http://www.xinhuanet.com/fortune/2017-12/29/c_129778594.htm" target="_blank">跃岭股份连续三年业绩下滑 并购屡受挫高管忙套现</a></span><span><a href="http://m.xinhuanet.com/2017-12/29/c_1122184356.htm" target="_blank">特稿：当贵州生态茶“牵手”英国下午茶</a></span><span><a href="http://www.xinhuanet.com/fortune/2017-12/29/c_129778585.htm" target="_blank">苹果操控老款手机变慢 在美遭8例集体诉讼</a></span><span><a href="http://m.xinhuanet.com/2017-12/29/c_1122184323.htm" target="_blank">人民币市场汇价（１２月２９日）</a></span><span><a href="http://www.xinhuanet.com/local/2017-12/29/c_1122183731.htm" target="_blank">男子驾考时摆弄"头发" 监考员:头上"长"天线在作弊</a></span><span><a href="http://www.xinhuanet.com/fortune/2017-12/29/c_129778548.htm" target="_blank">贵州茅台股价刷新历史高点 盘中市值突破9000亿</a></span><span><a href="http://m.xinhuanet.com/2017-12/29/c_1122184136.htm" target="_blank">２９日人民币对美元汇率中间价升７０个基点</a></span><span><a href="http://www.xinhuanet.com/fortune/2017-12/29/c_1122184112.htm" target="_blank">风险分级 央行新规致力于打造电子条码安全支付习惯</a></span><span><a href="http://www.xinhuanet.com/fortune/2017-12/29/c_1122184084.htm" target="_blank">打击收单乱象 央行划定条码支付安全框架</a></span><span><a href="http://m.xinhuanet.com/2017-12/29/c_1122184090.htm" target="_blank">俄共总统候选人格鲁季宁递交参选文件</a></span></div> 
+</div>
+<ul class="nav-op roedeer-container">
+<li class="nav-khd">客户端</li>
+<li class="nav-ss">搜索</li>
+<li class="nav-pd">频道</li>
+</ul>
+<a class="nav-next next-news" href="#">
+<div class="nav-n-n">下一篇</div>
+<div class="nav-n-t next-news-name ellipsis"></div>
+</a>
+<div class="nav-hide-op roedeer-links-container">
+<div class="nav-khd"></div>
+<div class="nav-ss">
+<input type="text" placeholder="输入要查找的新闻标题或关键字" id="kw" />
+<a href="javascript:void(0);" class="search"></a> 
+</div>
+<div class="nav-pd">
+<script src="http://www.xinhuanet.com/global/js/detailNav2017.js"></script> 
+</div>
+</div>
+</div>
+</div>
+<div class="header">
+<div class="h-p1">
+<div class="news-link">
+<!--广告ad-旗帜-顶部文字链三--> 
+<ins data-ycad-slot="758"></ins> 
+<!--广告ad-旗帜-顶部文字链二--> 
+<ins data-ycad-slot="757"></ins> 
+<!--广告ad-旗帜-顶部文字链一--> 
+<ins data-ycad-slot="756"></ins> 
+</div>
+<div class="news-position"> <a href="http://www.xinhuanet.com/" target="_blank">新华网</a> <a href=""></a> 正文 </div>
+</div>
+<div class="h-p2">
+<!--广告ad-旗帜-时政类频道-->
+<div class="qz sz-ad"><ins data-ycad-slot="391"></ins></div>
+<!--广告ad-旗帜-财经类频道-->
+<div class="qz cj-ad"><ins data-ycad-slot="755"></ins></div>
+<!--广告ad-旗帜-国际类频道-->
+<div class="qz jr-ad"><ins data-ycad-slot="754"></ins></div>
+<!--广告ad-通栏一-->
+<div class="h-p2-ad3"> <ins data-ycad-slot="396"></ins> </div>
+</div>
+<div class="h-p3 clearfix">
+<a href="http://www.xinhuanet.com/" class="net-logo" target="_blank"> <img src="http://www.newsimg.cn/xl2017/images/net_logo.png" /> </a>
+<div class="h-news">
+<div class="h-title">
+普京称圣彼得堡超市爆炸是恐怖袭击 
+</div>
+<div class="h-info">
+<span class="h-time"> 2017-12-29 07:58:03</span> 
+<span>
+来源： 
+<em id="source"> 新华社</em> 
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="main">
+<div class="part part1 clearfix" id="">
+<div class="fllow1-wap left">
+<div class="p-left left" id="fllow1">
+<div class="s-ewm">
+<img src="http://www.newsimg.cn/xl2017/images/wx.png" />
+<div>关注新华网</div>
+</div>
+<div class="s-item share-wx-item"> <a class="s-wx share-wx" href="javascript:void(0);"></a> 微信 </div>
+<div class="wx-ewm"><img src="" /></div>
+<div class="s-item"> <a class="s-wb share-wb" href="javascript:void(0);"></a> 微博 </div>
+<div class="s-item"> <a class="s-q share-q" href="javascript:void(0);"></a> Qzone </div>
+<a class="s-bottom" href="#news-com-location">
+<div class="s-num"></div>
+评论 
+</a>
+</div>
+</div>
+<div class="p-right left">
+<div id="p-detail">
+<iframe src=" " class="video-frame"></iframe>
+<div class="lb">
+<div class="standard_lb">
+<span class="tj">图集</span> <span class="origin"></span>
+<div class="swiper-container2" id="swiperContainer2">
+<div class="swiper-wrapper"> </div>
+<div class="swiper-pagination"></div>
+<div class="swiper_arrow arrow_left s_arrow_left"></div>
+<div class="swiper_arrow arrow_right s_arrow_right"></div>
+<div class="swiper-scrollbar"></div>
+<span class="lb-left s_arrow_left"></span> <span class="lb-right s_arrow_right"></span> 
+</div>
+</div>
+</div>
+<p>　　新华社莫斯科１２月２８日电（记者王晨笛）俄罗斯总统普京２８日表示，２７日发生在俄罗斯圣彼得堡一超市的爆炸事件是恐怖袭击。</p>
+<p>　　据克里姆林宫网站消息，普京明确称圣彼得堡超市爆炸案是一起恐袭事件，他已经责成联邦安全局尽快抓捕恐怖分子，抓捕行动中执法人员如遇生命威胁，将直接击毙恐怖分子，而“无需活捉”。</p>
+<p>　　普京当天是在为参加叙利亚反恐作战的归国官兵授勋时发表上述讲话的。他在讲话中说，授勋表明了俄罗斯打击国际恐怖主义、应对外来威胁的决心。</p>
+<p>　　２７日晚，俄第二大城市圣彼得堡北部一家超市发生爆炸，造成１３人受伤。初步调查结果表明，爆炸发生自一个自制爆炸装置，其爆炸威力相当于２００克ＴＮＴ炸药。目前，仍未有任何组织或个人宣称制造了这起爆炸。</p>
+<div class="zan-wap">
+<a href="javascript:void(0);" class="zan"> </a>
+<div class="zan-i">+1</div>
+<div class="zan-v"> <span></span> </div>
+</div>
+<div class="p-tags" id="">
+<div class="p-kwap"></div>
+<span class="p-jc">
+<span class="tiyi1">
+<a href="javascript:void(0);" class="advise">【纠错】</a>
+<div class="tiyi01" id="advisebox01" style="display:none">
+<div>
+<iframe id="jc_link1" style="width:600px;height:350px; float:left;" border="0" name="search" marginwidth="0" framespacing="0" marginheight="0" frameborder="0" noresize="" scrolling="no" vspale="0"></iframe>
+</div>
+<div class="tiyi03">
+<div id="jc_close1" style="cursor:pointer"><img src="http://www.xinhuanet.com/images/syicon/space.gif" width="24" height="24" border="0" /></div>
+</div>
+</div>
+</span>
+责任编辑： 
+刘憬杭 
+</span>
+</div>
+</div>
+<div class="l-ad-1">
+<!--广告ad-旗帜-通栏二--> 
+<ins data-ycad-slot="397"></ins> 
+</div>
+<div class="relate-news">
+
+<div class="l-ad-1">
+<!--广告ad-旗帜-通栏三--> 
+<ins data-ycad-slot="398"></ins> 
+</div>
+<div class="l-ad-1">
+<!--广告ad-银城广告--> 
+<ins data-ycad-slot="917"></ins>
+</div>
+<div class="news-com" id="news-com">
+<div class="column-name" id="news-com-name">
+新闻<span>评论</span>
+<div id="news-com-location"></div>
+</div>
+<!--评论-->
+<div class="news-com-wap">
+<script type="text/javascript">
+window.xhnc_commentOption = window.xhnc_commentOption||{style:'new'};
+</script>
+<div>
+<script type="text/javascript" src="http://tmisc.home.news.cn/nc/jxhremote-min.js"></script> 
+</div>
+</div>
+</div>
+<div class="l-ad-1" id="l-ad-1">
+<!--广告ad-旗帜-通栏四--> 
+<ins data-ycad-slot="399"></ins>
+<div class="" id="locat"></div>
+</div>
+<div class="l-ad-1">
+<!--广告ad-银城广告--> 
+<ins data-ycad-slot="917"></ins>
+</div>
+</div>
+</div>
+</div>
+<img src="http://www.newsimg.cn/xl2017/images/bg6.jpg" class="bg6" id="bg6" />
+<div class="part part2 clearfix" id="">
+<div class="p2-nav-wap left">
+<div class="p-left" id="p2-nav">
+<ul>
+</ul>
+</div>
+</div>
+<div class="p-right left" id="part2-list">
+<ul id="">
+</ul>
+<div class="more-2">加载更多</div>
+</div>
+</div>
+<div class="fllow3-wap">
+<div class="part-right" id="fllow3">
+<div class="ad" style="height:250" ad-height="250">
+<!--广告ad-旗帜-画中画一--> 
+<ins data-ycad-slot="392"></ins> 
+</div>
+<div class="ad" style="height:250" ad-height="250">
+<!--广告ad-旗帜-画中画二--> 
+<ins data-ycad-slot="393"></ins> 
+</div>
+<ul class="right-wap hot-news">
+<div class="name">热帖</div>
+<li>
+<a href="http://sike.news.cn/?p=219528340" target="_blank">“考研热”真相：唯学历问题造成的</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-29 08:49:29</div>
+</div>
+</li>
+<li>
+<a href="http://sike.news.cn/?p=219528339" target="_blank">叶兴庆：如何实现乡村振兴？抓好三个关键</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-29 08:49:29</div>
+</div>
+</li>
+<li>
+<a href="http://sike.news.cn/hot/zongli/index.html" target="_blank">征集丨2018"我向总理说句话"网民建言</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-15 09:39:47</div>
+</div>
+</li>
+<li>
+<a href="http://forum.home.news.cn/detail/141440894/1.html" target="_blank">医院回应医生微博“晒回扣”:恶作剧 已处分</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-28 11:22:34</div>
+</div>
+</li>
+<li>
+<a href="http://forum.home.news.cn/detail/141441407/1.html" target="_blank">机动车新规明年1月1日实施，有标准都变了！</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-28 11:22:34</div>
+</div>
+</li>
+</ul>
+<div class="xuanshi">
+<div class="name"> <span class="x-xt active" name="i-xt">炫图</span> <span class="x-sp" name="i-sp">视频</span> </div>
+<ul class="right-wap xs i-xt">
+<li>
+<a href="http://www.xinhuanet.com/photo/2017-12/29/c_1122182410.htm" target="_blank">
+<img src="http://m.news.cn/mil/titlepic/1122182683_1514505697352_title1n.png" />		
+<div>长颈鹿生小鹿 这个“宝宝”1.6米高</div>
+</a>
+</li>
+<li>
+<a href="http://www.xinhuanet.com/photo/2017-12/29/c_1122182574.htm" target="_blank">
+<img src="http://m.news.cn/mil/titlepic/1122182676_1514505775528_title1n.png" />		
+<div>杭州：孤山腊梅 暗香浮动</div>
+</a>
+</li>
+</ul> 
+<ul class="right-wap xs i-sp">
+<li>
+<a href="http://www.xinhuanet.com/video/2017-12/29/c_129778275.htm" target="_blank">
+<img src="http://m.news.cn/mil/titlepic/1122182610_1514505352865_title1n.jpg" />		
+<div>汽柴油年内最后一涨</div>
+</a>
+</li>
+<li>
+<a href="http://www.xinhuanet.com/video/2017-12/29/c_129778230.htm" target="_blank">
+<img src="http://m.news.cn/mil/titlepic/1122182530_1514504768806_title1n.png" />		
+<div>苹果公司遭遇集体诉讼</div>
+</a>
+</li>
+</ul> 
+</div>
+<div class="ad">
+<!--广告ad-旗帜-画中画三--> 
+<ins data-ycad-slot="394"></ins> 
+</div>
+<div class="right-wap hot-word">
+<div class="name">热词</div>
+</div>
+<div class="hot-words">
+<a href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E5%8D%81%E4%B9%9D%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE/22299152?sefr=xinhuawang" target="_blank">十九届二中全会</a><a href="https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E9%93%81%E8%B7%AF%E8%BF%90%E8%A1%8C%E5%9B%BE/17609299?sefr=xinhuawang" target="_blank">全国铁路运行图</a><a href="https://baike.baidu.com/item/%E5%85%B3%E4%BA%8E%E6%BF%80%E5%8F%91%E9%87%8D%E7%82%B9%E7%BE%A4%E4%BD%93%E6%B4%BB%E5%8A%9B%E5%B8%A6%E5%8A%A8%E5%9F%8E%E4%B9%A1%E5%B1%85%E6%B0%91%E5%A2%9E%E6%94%B6%E7%9A%84%E5%AE%9E%E6%96%BD%E6%84%8F%E8%A7%81/20159157?sefr=xinhuawang" target="_blank">增收计划</a><a href="https://baike.baidu.com/item/%E6%9D%A1%E7%A0%81%E6%94%AF%E4%BB%98/10711903?sefr=xinhuawang" target="_blank">条码支付</a><a href="https://baike.baidu.com/item/%E6%A0%A1%E5%9B%AD%E6%AC%BA%E5%87%8C/7928566?sefr=xinhuawang" target="_blank">校园欺凌</a><a href="https://baike.baidu.com/item/%E6%88%BF%E5%B1%8B%E7%A7%9F%E8%B5%81/5033686?sefr=xinhuawang" target="_blank">房屋租赁</a><a href="https://baike.baidu.com/item/%E7%A9%BA%E6%B0%94%E6%B1%A1%E6%9F%93/341495?sefr=xinhuawang" target="_blank">空气污染</a><a href="https://baike.baidu.com/item/%E7%8E%AF%E5%8D%AB%E5%B7%A5%E4%BA%BA/2411426?sefr=xinhuawang" target="_blank">环卫工人</a><a href="https://baike.baidu.com/item/%E7%81%AF%E6%B3%A1%E7%B3%96/22301252?sefr=xinhuawang" target="_blank">灯泡糖</a><a href="https://baike.baidu.com/item/%E8%B6%85%E7%BA%A7%E6%9C%88%E4%BA%AE/7710315?sefr=xinhuawang" target="_blank">超级月亮</a> 
+</div>
+<div class="ad-last" style="width: 100%; height: 250px">
+<!--广告ad-旗帜-画中画四--> 
+<ins data-ycad-slot="753"></ins> 
+</div>
+</div>
+</div>
+</div>
+<div class="bottom" id="bottom">
+<div class="bottom-ad">
+<a href="http://www.xinhuanet.com/photo/2017-12/28/c_129778046.htm" target="_blank">
+<img src="../../titlepic/129778045_1_title1n.jpg" alt="&ldquo;雪龙&rdquo;号开始向中山站卸货" />  
+<div>“雪龙”号开始向中山站卸货</div>
+</a>
+<a href="" target="_blank">
+<img src="../../titlepic/129778025_1_title1n.jpg" alt="新疆多部门积极应对暴雪天气" />  
+<div>新疆多部门积极应对暴雪天气</div>
+</a>
+<a href="http://www.xinhuanet.com/photo/2017-12/28/c_129778014.htm" target="_blank">
+<img src="../../titlepic/129778012_1_title1n.jpg" alt="中国火星村项目通过专家评审" />  
+<div>中国火星村项目通过专家评审</div>
+</a>
+<a href="http://www.xinhuanet.com/photo/2017-12/28/c_129777989.htm" target="_blank">
+<img src="../../titlepic/129777986_1_title1n.jpg" alt="冬日栈桥观海鸥" />  
+<div>冬日栈桥观海鸥</div>
+</a> 
+</div>
+<div class="bottom-next"> <a class="next-news" href="#"><span class="next-news-name"></span></a> </div>
+</div>
+<div class="seo" style="display:none">
+<a href="http://m.news.cn/video/2017-12/29/c_129778490.htm">京津冀对53国实施144小时过境免签</a><a href="http://m.news.cn/video/2017-12/29/c_129778346.htm">智能音箱成为最畅销节日礼物 助推亚马逊假日销售</a><a href="http://m.news.cn/video/2017-12/29/c_129778232.htm">共计筹款约294万元：“同一天生日”募捐主办方致歉</a><a href="http://m.news.cn/video/2017-12/29/c_129778488.htm">美国加州迪士尼乐园突发停电遭指责</a><a href="http://m.news.cn/tech/2017-12/29/c_1122180610.htm">“千机变”之2017手机行业大事件</a><a href="http://m.news.cn/video/2017-12/29/c_129778235.htm">生活提醒：流感进入高发期 区分感冒和流感很重要</a><a href="http://m.news.cn/video/2017-12/29/c_129778272.htm">我国启动十万人基因组计划</a><a href="http://m.news.cn/world/2017-12/29/c_129778296.htm">美国废除“网络中立”引争议</a><a href="http://www.xinhuanet.com/world/2017-12/29/c_129777615.htm" target="_blank">狗年将至 萌汪陪你迎新年</a><a href="http://m.news.cn/video/2017-12/29/c_129778351.htm">三季度苹果占全球手机利润较去年大幅下滑</a> 
+</div>
+<div class="footer">
+<div class="f-link clearfix">
+<div class="f-logo"></div>
+<div class="f-nav">
+<script src="http://www.xinhuanet.com/global/js/detailNav2017.js"></script> 
+</div>
+</div>
+<div class="copyright">
+<div class="right">
+<span>关注我们</span> 
+<a href="javascript:void(0);" class="f-wx">
+<div class="c-wx"></div>
+</a>
+<a href="http://weibo.com/newsxh" class="f-wb" target="_blank"></a> <a href="http://www.news.cn/2015/xhcppub/xhsxw/index.html" class="f-ewm" target="_blank"></a> 
+</div>
+<div class="left">
+<div class="c-link"> <a href="http://203.192.6.89/xhs/" target="_blank">新华社简介</a> <a href="http://www.xinhuanet.ltd/" target="_blank">公司官网</a> <a href="http://www.xinhuanet.com/company/contact-us.htm" target="_blank">联系我们</a> <a href="http://www.news.cn/linktous.htm" target="_blank">我要链接</a> <a href="http://www.xinhuanet.com/company/copyright.htm " target="_blank">版权声明</a> <a href="http://www.xinhuanet.com/company/legal.htm " target="_blank">法律顾问</a> <a href="http://www.news.cn/xwhggfw/index.htm" target="_blank">广告服务</a> <a href="http://www.news.cn/jsfw/index.html" target="_blank" class="last-child">技术服务中心</a> </div>
+<div class="c-bq">
+<script src="http://www.xinhuanet.com/global/public/pcFooter.js"></script> 
+</div>
+</div>
+</div>
+</div>
+<script src="http://www.xinhuanet.com/global/js/swiper2.min.js"></script> 
+<script type="text/javascript" src="http://www.newsres.cn/xl2017/js/main_v2.js"></script> 
+<!--微信分享图功能-->
+<div class="share-title" style="display:none">
+普京称圣彼得堡超市爆炸是恐怖袭击
+</div>
+<div class="share-substr" style="display:none"></div>
+<img class="share-img" style="display:none" src="http://www.newsimg.cn/common/share/logo4share.jpg" width="300" height="300" /> 
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+<script src="http://www.xinhuanet.com/global/public/wxShare.js"></script> 
+<!--微信分享图功能--> 
+﻿<script type="text/javascript">
+$(function(){
+	window["_BFD"] = window["_BFD"] || {};
+	
+	var p_all = $("meta[name=pageid]").attr("content");
+	var p_keyword = $("meta[name=keywords]").attr("content");
+	var p_ids=p_all.split(".");
+	var p_cat = p_ids[0];
+	
+	
+	_BFD.BFD_INFO = {	
+		"iid" : "",    
+		"url" : "http://www.xici.net/d187159548.htm",  
+		"title" : '普京称圣彼得堡超市爆炸是恐怖袭击',  
+		"ptime" : '2017-12-29 07:58:03',  
+		"vcnt" : "666",   
+		"source" : '新华社',   
+		"typ" : "新闻",  		
+		"author" : '王晨笛',   
+		"cat" : p_cat,  
+		"attr" : {"pt":"文本","th":"新闻报道","ni":"频道"},   
+		"tag" : p_keyword,   
+		"pic" : "",   
+		"ccnt" : "666", 
+		"abs" : '俄罗斯总统普京２８日表示，２７日发生在俄罗斯圣彼得堡一超市的爆炸事件是恐怖袭击。', 
+		"loc" : "",
+		"user_id" : "",
+		"page_type" : "detail" 
+	};
+})
+</script> 
+<script type="text/javascript">
+window["_BFD"] = window["_BFD"] || {};
+_BFD.client_id = "Cxhw";
+_BFD.BFD_USER = {	
+		"user_id" : "123456",
+};
+_BFD.script = document.createElement("script");
+_BFD.script.type = "text/javascript";
+_BFD.script.async = true;
+_BFD.script.charset = "utf-8";                                                  
+_BFD.script.src = (('https:'==document.location.protocol?'https://':'http://')+'bd.xinhuanet.com/xinhuawang.js');  
+document.getElementsByTagName("head")[0].appendChild(_BFD.script);
+</script>
+<!--ad_广告--> 
+<script type="text/javascript">
+var isMobile=(function(){if(navigator.userAgent.match(/mobile/i)) return true})();
+if(isMobile){
+    // wap 端 不显示广告
+}
+else{
+	document.write("<ins data-ycad-slot=\"395\"></ins>");//ad_流媒体
+}
+</script> 
+<script type="text/javascript" src="//a2.xinhuanet.com/js/xadndelayed.js"></script>
+<div style="display:none"><div id="fwl">010160150000000000000000011100831297782061</div><script type="text/javascript" src="http://webd.home.news.cn/webdig.js?z=1"></script><script type="text/javascript">wd_paramtracker("_wdxid=010160150000000000000000011100831297782061")</script><noscript><img src="http://webd.home.news.cn/1.gif?z=1&_wdxid=010160150000000000000000011100831297782061" border="0" /></noscript></div>   </body>
+</html>

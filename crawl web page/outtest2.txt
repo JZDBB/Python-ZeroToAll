@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="publishid" content="1122188388.13.1002.0"/><meta name="pageid" content="1198.11100.0.0.113667.0.0.0.0.0.11338.1122188388"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" />
+<meta name="keywords" content="埃及,古特雷斯,教堂,开罗,阿马克
+" />
+<meta name="description" content="古特雷斯谴责埃及开罗教堂恐怖袭击事件
+---联合国秘书长古特雷斯２９日通过发言人发表声明，对发生在埃及首都开罗一所教堂的恐怖袭击事件表示谴责。" />
+<script src="http://www.xinhuanet.com/global/js/pageCore.js"></script>
+<title>
+古特雷斯谴责埃及开罗教堂恐怖袭击事件-新华网
+</title>
+<link rel="stylesheet" href="http://www.xinhuanet.com/global/public/css/common.css" />
+<link rel="stylesheet" href="http://www.xinhuanet.com/global/css/swiper2.min.css" />
+<link rel="stylesheet" type="text/css" href="http://www.newsres.cn/xl2017/css/main.css" />
+<style>
+.nav { z-index:999;}
+.h-p2 .qz {display: none;}
+.news-link a {color: #348CEC!important;font-size: 12px!important;}
+</style>
+<script type="text/javascript" src="http://www.xinhuanet.com/global/js/jquery.min.js"></script>
+<!--访问量通用js设置-->
+<script type="text/javascript">
+//锁定域名
+document.domain="xinhuanet.com";
+</script>
+<script src="http://www.xinhuanet.com/video/static/videovisit.js"></script>
+<!--访问量通用js设置-->
+</head>
+<body class="" name="">
+<script type="text/javascript">
+var isMobile = (/iPad|iPhone|Android|Windows Phone|Nokia/).test(navigator.userAgent);
+if(isMobile){
+	document.getElementsByTagName("body")[0].style.display = "none";
+}
+</script>
+<div class="nav">
+<div class="nav-wap">
+<a href="#" class="logo left"></a>
+<div class="nav-carousel">
+<div class="gotrain-container nav-ul"><span><a href="http://www.xinhuanet.com/world/2017-12/30/c_1122188388.htm" target="_blank">古特雷斯谴责埃及开罗教堂恐怖袭击事件</a></span><span><a href="http://www.xinhuanet.com/renshi/2017-12/30/c_1122188368.htm" target="_blank">安徽省政府领导分工调整：两名新任副省长任务明确</a></span><span><a href="http://www.xinhuanet.com/legal/2017-12/30/c_1122188369.htm" target="_blank">非遗传承人造烟花免予刑罚 儿子:不愿再让他担惊受怕</a></span><span><a href="http://www.xinhuanet.com/world/2017-12/30/c_1122188364.htm" target="_blank">土耳其首都新年前夕加强安全防范措施</a></span><span><a href="http://www.xinhuanet.com/renshi/2017-12/30/c_1122188361.htm" target="_blank">凌希任上海市委常委</a></span><span><a href="http://www.xinhuanet.com/world/2017-12/30/c_1122188358.htm" target="_blank">英国遭遇严寒天气 交通和供电受影响</a></span><span><a href="http://www.xinhuanet.com/world/2017-12/30/c_1122188356.htm" target="_blank">哥伦比亚一夜总会发生手榴弹爆炸３１人受伤</a></span><span><a href="http://www.xinhuanet.com/world/2017-12/30/c_1122188345.htm" target="_blank">埃及总统说教堂恐袭不会削弱埃及反恐决心</a></span><span><a href="http://www.xinhuanet.com/world/2017-12/30/c_1122188344.htm" target="_blank">叙反对派武装开始从大马士革西南地区撤离</a></span><span><a href="http://www.xinhuanet.com/world/2017-12/30/c_1122188342.htm" target="_blank">芝加哥农产品期价２９日涨跌不一</a></span></div> 
+</div>
+<ul class="nav-op roedeer-container">
+<li class="nav-khd">客户端</li>
+<li class="nav-ss">搜索</li>
+<li class="nav-pd">频道</li>
+</ul>
+<a class="nav-next next-news" href="#">
+<div class="nav-n-n">下一篇</div>
+<div class="nav-n-t next-news-name ellipsis"></div>
+</a>
+<div class="nav-hide-op roedeer-links-container">
+<div class="nav-khd"></div>
+<div class="nav-ss">
+<input type="text" placeholder="输入要查找的新闻标题或关键字" id="kw" />
+<a href="javascript:void(0);" class="search"></a> 
+</div>
+<div class="nav-pd">
+<script src="http://www.xinhuanet.com/global/js/detailNav2017.js"></script> 
+</div>
+</div>
+</div>
+</div>
+<div class="header">
+<div class="h-p1">
+<div class="news-link">
+<!--广告ad-旗帜-顶部文字链三--> 
+<ins data-ycad-slot="758"></ins> 
+<!--广告ad-旗帜-顶部文字链二--> 
+<ins data-ycad-slot="757"></ins> 
+<!--广告ad-旗帜-顶部文字链一--> 
+<ins data-ycad-slot="756"></ins> 
+</div>
+<div class="news-position"> <a href="http://www.xinhuanet.com/" target="_blank">新华网</a> <a href=""></a> 正文 </div>
+</div>
+<div class="h-p2">
+<!--广告ad-旗帜-时政类频道-->
+<div class="qz sz-ad"><ins data-ycad-slot="391"></ins></div>
+<!--广告ad-旗帜-财经类频道-->
+<div class="qz cj-ad"><ins data-ycad-slot="755"></ins></div>
+<!--广告ad-旗帜-国际类频道-->
+<div class="qz jr-ad"><ins data-ycad-slot="754"></ins></div>
+<!--广告ad-通栏一-->
+<div class="h-p2-ad3"> <ins data-ycad-slot="396"></ins> </div>
+</div>
+<div class="h-p3 clearfix">
+<a href="http://www.xinhuanet.com/" class="net-logo" target="_blank"> <img src="http://www.newsimg.cn/xl2017/images/net_logo.png" /> </a>
+<div class="h-news">
+<div class="h-title">
+古特雷斯谴责埃及开罗教堂恐怖袭击事件 
+</div>
+<div class="h-info">
+<span class="h-time"> 2017-12-30 07:23:01</span> 
+<span>
+来源： 
+<em id="source"> 新华网</em> 
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="main">
+<div class="part part1 clearfix" id="">
+<div class="fllow1-wap left">
+<div class="p-left left" id="fllow1">
+<div class="s-ewm">
+<img src="http://www.newsimg.cn/xl2017/images/wx.png" />
+<div>关注新华网</div>
+</div>
+<div class="s-item share-wx-item"> <a class="s-wx share-wx" href="javascript:void(0);"></a> 微信 </div>
+<div class="wx-ewm"><img src="" /></div>
+<div class="s-item"> <a class="s-wb share-wb" href="javascript:void(0);"></a> 微博 </div>
+<div class="s-item"> <a class="s-q share-q" href="javascript:void(0);"></a> Qzone </div>
+<a class="s-bottom" href="#news-com-location">
+<div class="s-num"></div>
+评论 
+</a>
+</div>
+</div>
+<div class="p-right left">
+<div id="p-detail">
+<iframe src=" " class="video-frame"></iframe>
+<div class="lb">
+<div class="standard_lb">
+<span class="tj">图集</span> <span class="origin"></span>
+<div class="swiper-container2" id="swiperContainer2">
+<div class="swiper-wrapper"> </div>
+<div class="swiper-pagination"></div>
+<div class="swiper_arrow arrow_left s_arrow_left"></div>
+<div class="swiper_arrow arrow_right s_arrow_right"></div>
+<div class="swiper-scrollbar"></div>
+<span class="lb-left s_arrow_left"></span> <span class="lb-right s_arrow_right"></span> 
+</div>
+</div>
+</div>
+<p>　　新华社联合国１２月２９日电（记者王建刚）联合国秘书长古特雷斯２９日通过发言人发表声明，对发生在埃及首都开罗一所教堂的恐怖袭击事件表示谴责。</p>
+<p>　　古特雷斯向袭击事件中遇难者的家属以及埃及政府和人民表示慰问，并呼吁将制造恐怖袭击的凶手尽快绳之以法。</p>
+<p>　　埃及首都开罗南部赫勒万区的马尔·米纳教堂当天遭不明身份武装分子袭击，至少１０人死亡、多人受伤。此外，埃及拆弹小组还在教堂附近拆除两枚炸弹。</p>
+<p>　　有媒体报道，极端组织“伊斯兰国”当天通过与其有关联的阿马克通讯社发布消息说，该组织制造了这起恐怖袭击。</p>
+<div class="zan-wap">
+<a href="javascript:void(0);" class="zan"> </a>
+<div class="zan-i">+1</div>
+<div class="zan-v"> <span></span> </div>
+</div>
+<div class="p-tags" id="">
+<div class="p-kwap"></div>
+<span class="p-jc">
+<span class="tiyi1">
+<a href="javascript:void(0);" class="advise">【纠错】</a>
+<div class="tiyi01" id="advisebox01" style="display:none">
+<div>
+<iframe id="jc_link1" style="width:600px;height:350px; float:left;" border="0" name="search" marginwidth="0" framespacing="0" marginheight="0" frameborder="0" noresize="" scrolling="no" vspale="0"></iframe>
+</div>
+<div class="tiyi03">
+<div id="jc_close1" style="cursor:pointer"><img src="http://www.xinhuanet.com/images/syicon/space.gif" width="24" height="24" border="0" /></div>
+</div>
+</div>
+</span>
+责任编辑： 
+张樵苏 
+</span>
+</div>
+</div>
+<div class="l-ad-1">
+<!--广告ad-旗帜-通栏二--> 
+<ins data-ycad-slot="397"></ins> 
+</div>
+<div class="relate-news">
+
+<div class="l-ad-1">
+<!--广告ad-旗帜-通栏三--> 
+<ins data-ycad-slot="398"></ins> 
+</div>
+<div class="l-ad-1">
+<!--广告ad-银城广告--> 
+<ins data-ycad-slot="917"></ins>
+</div>
+<div class="news-com" id="news-com">
+<div class="column-name" id="news-com-name">
+新闻<span>评论</span>
+<div id="news-com-location"></div>
+</div>
+<!--评论-->
+<div class="news-com-wap">
+<script type="text/javascript">
+window.xhnc_commentOption = window.xhnc_commentOption||{style:'new'};
+</script>
+<div>
+<script type="text/javascript" src="http://tmisc.home.news.cn/nc/jxhremote-min.js"></script> 
+</div>
+</div>
+</div>
+<div class="l-ad-1" id="l-ad-1">
+<!--广告ad-旗帜-通栏四--> 
+<ins data-ycad-slot="399"></ins>
+<div class="" id="locat"></div>
+</div>
+<div class="l-ad-1">
+<!--广告ad-银城广告--> 
+<ins data-ycad-slot="917"></ins>
+</div>
+</div>
+</div>
+</div>
+<img src="http://www.newsimg.cn/xl2017/images/bg6.jpg" class="bg6" id="bg6" />
+<div class="part part2 clearfix" id="">
+<div class="p2-nav-wap left">
+<div class="p-left" id="p2-nav">
+<ul>
+</ul>
+</div>
+</div>
+<div class="p-right left" id="part2-list">
+<ul id="">
+</ul>
+<div class="more-2">加载更多</div>
+</div>
+</div>
+<div class="fllow3-wap">
+<div class="part-right" id="fllow3">
+<div class="ad" style="height:250" ad-height="250">
+<!--广告ad-旗帜-画中画一--> 
+<ins data-ycad-slot="392"></ins> 
+</div>
+<div class="ad" style="height:250" ad-height="250">
+<!--广告ad-旗帜-画中画二--> 
+<ins data-ycad-slot="393"></ins> 
+</div>
+<ul class="right-wap hot-news">
+<div class="name">热帖</div>
+<li>
+<a href="http://sike.news.cn/hot/2017/12/xxy/index.html" target="_blank">2017，致我们无处不在的小幸运</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-29 22:46:05</div>
+</div>
+</li>
+<li>
+<a href="http://sike.news.cn/hot/zongli/index.html" target="_blank">征集丨2018"我向总理说句话"网民建言</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-15 09:39:47</div>
+</div>
+</li>
+<li>
+<a href="http://forum.home.news.cn/detail/141443747/1.html" target="_blank">2017，你的小目标实现了吗？</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-29 10:57:34</div>
+</div>
+</li>
+<li>
+<a href="http://forum.home.news.cn/detail/141444280/1.html" target="_blank">元旦去哪儿？1.35亿人次出游南下北上成主流</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-29 10:57:34</div>
+</div>
+</li>
+<li>
+<a href="http://forum.home.news.cn/detail/141444277/1.html" target="_blank">"艺考热"持续的背后：是否能做高考的"捷径"？</a>		
+<div class="clearfix hot-bottom">
+<div class="right"></div>
+<div class="left publish-time">2017-12-29 10:57:34</div>
+</div>
+</li>
+</ul>
+<div class="xuanshi">
+<div class="name"> <span class="x-xt active" name="i-xt">炫图</span> <span class="x-sp" name="i-sp">视频</span> </div>
+<ul class="right-wap xs i-xt">
+<li>
+<a href="http://www.xinhuanet.com/photo/2017-12/29/c_129779099.htm" target="_blank">
+<img src="http://www.xinhuanet.com/world/titlepic/1122188225_1514557479532_title1n.jpg" />		
+<div>福州：传统文化飘香校园</div>
+</a>
+</li>
+<li>
+<a href="http://www.xinhuanet.com/photo/2017-12/29/c_129778858.htm" target="_blank">
+<img src="http://www.xinhuanet.com/world/titlepic/1122187504_1514541287393_title1n.jpg" />		
+<div>传统文化庙会迎新年</div>
+</a>
+</li>
+</ul> 
+<ul class="right-wap xs i-sp">
+<li>
+<a href="http://www.xinhuanet.com/video/2017-12/29/c_129778707.htm" target="_blank">
+<img src="http://www.xinhuanet.com/world/titlepic/1122185706_1514525775540_title1n.png" />		
+<div>65岁探险家划船环球行</div>
+</a>
+</li>
+<li>
+<a href="http://www.xinhuanet.com/video/2017-12/29/c_129778711.htm" target="_blank">
+<img src="http://www.xinhuanet.com/world/titlepic/1122185687_1514525455805_title1n.png" />		
+<div>多年挚友竟为亲兄弟</div>
+</a>
+</li>
+</ul> 
+</div>
+<div class="ad">
+<!--广告ad-旗帜-画中画三--> 
+<ins data-ycad-slot="394"></ins> 
+</div>
+<div class="right-wap hot-word">
+<div class="name">热词</div>
+</div>
+<div class="hot-words">
+<a href="https://baike.baidu.com/item/%E4%B8%AD%E5%85%B1%E4%B8%AD%E5%A4%AE%E6%94%BF%E6%B2%BB%E5%B1%80%E5%85%B3%E4%BA%8E%E6%94%B9%E8%BF%9B%E5%B7%A5%E4%BD%9C%E4%BD%9C%E9%A3%8E%E5%AF%86%E5%88%87%E8%81%94%E7%B3%BB%E7%BE%A4%E4%BC%97%E7%9A%84%E8%A7%84%E5%AE%9A/261727?sefr=xinhuawang" target="_blank">中共中央政治局关于改进工作作风密切联系群众的规定 </a><a href="https://baike.baidu.com/item/%E6%A0%A1%E5%9B%AD%E8%B4%B7/19461739?sefr=xinhuawang" target="_blank">校园贷</a><a href="https://baike.baidu.com/item/%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6%E4%B8%93%E7%94%A8%E5%8F%B7%E7%89%8C/19525289?sefr=xinhuawang" target="_blank">新能源汽车专用号牌</a><a href="https://baike.baidu.com/item/%E7%BE%8A%E6%AF%9B%E5%85%9A/13681750?sefr=xinhuawang" target="_blank">羊毛党</a><a href="https://baike.baidu.com/item/%E6%94%AF%E4%BB%98%E5%AE%9D/496859?sefr=xinhuawang" target="_blank">支付宝</a><a href="https://baike.baidu.com/item/%E7%94%B5%E5%AD%90%E8%BA%AB%E4%BB%BD%E8%AF%81/3680632?sefr=xinhuawang" target="_blank">电子身份证</a><a href="https://baike.baidu.com/item/%E4%BD%BF%E8%8A%82/33138?sefr=xinhuawang" target="_blank">使节</a><a href="https://baike.baidu.com/item/%E4%BA%AC%E6%B4%A5%E5%86%80%E4%B8%80%E5%8D%A1%E9%80%9A/12770217?sefr=xinhuawang" target="_blank">京津冀一卡通</a><a href="https://baike.baidu.com/item/%E6%96%B0%E5%8D%8E%E5%B9%BF%E6%92%AD/19543867?sefr=xinhuawang&amp;qq-pf-to=pcqq.discussion" target="_blank">新华广播</a><a href="https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%AC%AC%E5%8D%81%E4%B9%9D%E5%B1%8A%E4%B8%AD%E5%A4%AE%E5%A7%94%E5%91%98%E4%BC%9A%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%85%A8%E4%BD%93%E4%BC%9A%E8%AE%AE/22299152?sefr=xinhuawang" target="_blank">十九届二中全会</a> 
+</div>
+<div class="ad-last" style="width: 100%; height: 250px">
+<!--广告ad-旗帜-画中画四--> 
+<ins data-ycad-slot="753"></ins> 
+</div>
+</div>
+</div>
+</div>
+<div class="bottom" id="bottom">
+<div class="bottom-ad">
+<a href="http://www.xinhuanet.com/world/2017-12/29/c_129778943.htm" target="_blank">
+<img src="../../titlepic/129778943_1_title1n.jpg" alt="纽约一公寓发生火灾　至少12人死亡" />  
+<div>纽约一公寓发生火灾　至少12人死亡</div>
+</a>
+<a href="http://www.xinhuanet.com/photo/2017-12/28/c_129778046.htm" target="_blank">
+<img src="../../titlepic/129778045_1_title1n.jpg" alt="&ldquo;雪龙&rdquo;号开始向中山站卸货" />  
+<div>“雪龙”号开始向中山站卸货</div>
+</a>
+<a href="" target="_blank">
+<img src="../../titlepic/129778025_1_title1n.jpg" alt="新疆多部门积极应对暴雪天气" />  
+<div>新疆多部门积极应对暴雪天气</div>
+</a>
+<a href="http://www.xinhuanet.com/photo/2017-12/28/c_129778014.htm" target="_blank">
+<img src="../../titlepic/129778012_1_title1n.jpg" alt="中国火星村项目通过专家评审" />  
+<div>中国火星村项目通过专家评审</div>
+</a> 
+</div>
+<div class="bottom-next"> <a class="next-news" href="#"><span class="next-news-name"></span></a> </div>
+</div>
+<div class="seo" style="display:none">
+<a href="http://www.xinhuanet.com/video/2017-12/29/c_129778490.htm">京津冀对53国实施144小时过境免签</a><a href="http://www.xinhuanet.com/video/2017-12/29/c_129778707.htm">65岁俄探险家将挑战热气球飞行和划船环球行</a><a href="http://www.xinhuanet.com/video/2017-12/29/c_129778346.htm">智能音箱成为最畅销节日礼物 助推亚马逊假日销售</a><a href="http://www.xinhuanet.com/video/2017-12/29/c_129778232.htm">共计筹款约294万元：“同一天生日”募捐主办方致歉</a><a href="http://www.xinhuanet.com/video/2017-12/29/c_129778488.htm">美国加州迪士尼乐园突发停电遭指责</a><a href="http://www.xinhuanet.com/2017-12/29/c_1122180610.htm">“千机变”之2017手机行业大事件</a><a href="http://www.xinhuanet.com/video/2017-12/29/c_129778235.htm">生活提醒：流感进入高发期 区分感冒和流感很重要</a><a href="http://www.xinhuanet.com/world/2017-12/29/c_129778296.htm">美国废除“网络中立”引争议</a><a href="http://www.xinhuanet.com/world/2017-12/29/c_129777615.htm" target="_blank">狗年将至 萌汪陪你迎新年</a><a href="http://www.xinhuanet.com/video/2017-12/29/c_129778351.htm">三季度苹果占全球手机利润较去年大幅下滑</a> 
+</div>
+<div class="footer">
+<div class="f-link clearfix">
+<div class="f-logo"></div>
+<div class="f-nav">
+<script src="http://www.xinhuanet.com/global/js/detailNav2017.js"></script> 
+</div>
+</div>
+<div class="copyright">
+<div class="right">
+<span>关注我们</span> 
+<a href="javascript:void(0);" class="f-wx">
+<div class="c-wx"></div>
+</a>
+<a href="http://weibo.com/newsxh" class="f-wb" target="_blank"></a> <a href="http://www.news.cn/2015/xhcppub/xhsxw/index.html" class="f-ewm" target="_blank"></a> 
+</div>
+<div class="left">
+<div class="c-link"> <a href="http://203.192.6.89/xhs/" target="_blank">新华社简介</a> <a href="http://www.xinhuanet.ltd/" target="_blank">公司官网</a> <a href="http://www.xinhuanet.com/company/contact-us.htm" target="_blank">联系我们</a> <a href="http://www.news.cn/linktous.htm" target="_blank">我要链接</a> <a href="http://www.xinhuanet.com/company/copyright.htm " target="_blank">版权声明</a> <a href="http://www.xinhuanet.com/company/legal.htm " target="_blank">法律顾问</a> <a href="http://www.news.cn/xwhggfw/index.htm" target="_blank">广告服务</a> <a href="http://www.news.cn/jsfw/index.html" target="_blank" class="last-child">技术服务中心</a> </div>
+<div class="c-bq">
+<script src="http://www.xinhuanet.com/global/public/pcFooter.js"></script> 
+</div>
+</div>
+</div>
+</div>
+<script src="http://www.xinhuanet.com/global/js/swiper2.min.js"></script> 
+<script type="text/javascript" src="http://www.newsres.cn/xl2017/js/main_v2.js"></script> 
+<!--微信分享图功能-->
+<div class="share-title" style="display:none">
+古特雷斯谴责埃及开罗教堂恐怖袭击事件
+</div>
+<div class="share-substr" style="display:none"></div>
+<img class="share-img" style="display:none" src="http://www.newsimg.cn/common/share/logo4share.jpg" width="300" height="300" /> 
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+<script src="http://www.xinhuanet.com/global/public/wxShare.js"></script> 
+<!--微信分享图功能--> 
+﻿<script type="text/javascript">
+$(function(){
+	window["_BFD"] = window["_BFD"] || {};
+	
+	var p_all = $("meta[name=pageid]").attr("content");
+	var p_keyword = $("meta[name=keywords]").attr("content");
+	var p_ids=p_all.split(".");
+	var p_cat = p_ids[0];
+	
+	
+	_BFD.BFD_INFO = {	
+		"iid" : "",    
+		"url" : "http://www.xici.net/d187159548.htm",  
+		"title" : '古特雷斯谴责埃及开罗教堂恐怖袭击事件',  
+		"ptime" : '2017-12-30 07:23:01',  
+		"vcnt" : "666",   
+		"source" : '新华网',   
+		"typ" : "新闻",  		
+		"author" : '王建刚',   
+		"cat" : p_cat,  
+		"attr" : {"pt":"文本","th":"新闻报道","ni":"频道"},   
+		"tag" : p_keyword,   
+		"pic" : "",   
+		"ccnt" : "666", 
+		"abs" : '联合国秘书长古特雷斯２９日通过发言人发表声明，对发生在埃及首都开罗一所教堂的恐怖袭击事件表示谴责。', 
+		"loc" : "",
+		"user_id" : "",
+		"page_type" : "detail" 
+	};
+})
+</script> 
+<script type="text/javascript">
+window["_BFD"] = window["_BFD"] || {};
+_BFD.client_id = "Cxhw";
+_BFD.BFD_USER = {	
+		"user_id" : "123456",
+};
+_BFD.script = document.createElement("script");
+_BFD.script.type = "text/javascript";
+_BFD.script.async = true;
+_BFD.script.charset = "utf-8";                                                  
+_BFD.script.src = (('https:'==document.location.protocol?'https://':'http://')+'bd.xinhuanet.com/xinhuawang.js');  
+document.getElementsByTagName("head")[0].appendChild(_BFD.script);
+</script>
+<!--ad_广告--> 
+<script type="text/javascript">
+var isMobile=(function(){if(navigator.userAgent.match(/mobile/i)) return true})();
+if(isMobile){
+    // wap 端 不显示广告
+}
+else{
+	document.write("<ins data-ycad-slot=\"395\"></ins>");//ad_流媒体
+}
+</script> 
+<script type="text/javascript" src="//a2.xinhuanet.com/js/xadndelayed.js"></script>
+<div style="display:none"><div id="fwl">010020030300000000000000011105701122188388</div><script type="text/javascript" src="http://webd.home.news.cn/webdig.js?z=1"></script><script type="text/javascript">wd_paramtracker("_wdxid=010020030300000000000000011105701122188388")</script><noscript><img src="http://webd.home.news.cn/1.gif?z=1&_wdxid=010020030300000000000000011105701122188388" border="0" /></noscript></div>   </body>
+</html>
