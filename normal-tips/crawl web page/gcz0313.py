@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Nov 13 15:33:54 2017
-@author: john
-"""
+
 from urllib import urlretrieve
 from bs4 import BeautifulSoup
 import random
@@ -13,14 +10,11 @@ import fact_triple_extraction1chen
 import re
 import csv
 import os
-import sys
-
 from postData import *
 from datetime import datetime, timedelta
 #import db_connect
 import time
 import logging
-
 logging.basicConfig(level=logging.DEBUG,
                 format="%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s",
                 datefmt="%a, %d %b %Y %H:%M:%S",
@@ -39,11 +33,11 @@ class Crawl_Xinhua():
         else:
             self.deadlineTime=(datetime.now()-timedelta(days=timeFrame)).strftime("%Y-%m-%d")
         self.my_headers=["Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36",
-"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36",
-"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0"
-"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/537.75.14", 
-"Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0)"  ] 
-        self.starturl = "http://search.cctv.com/search.php?qtext=%E6%81%90%E6%80%96%E8%A2%AD%E5%87%BB&sort=date&type=web&vtime=&datepid=1&channel=&page=1"
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0"
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/537.75.14", 
+        "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0)"  ] 
+        self.starturl = "http://www.guancha.cn/Search/?k=%E6%81%90%E6%80%96%E8%A2%AD%E5%87%BB&y=1&ps=20&pi=1"
 
     def get_page_count(self,url,headers):
         '''
@@ -53,20 +47,25 @@ class Crawl_Xinhua():
         html =None
 
         html=self.getUrl_multiTry(url,headers)
-        
-        content_dict = json.loads(html)
-        pacgeCount=0
-        resultCount=0
-        if content_dict.has_key("content") and content_dict["content"].has_key("pageCount"):
-            pacgeCount = content_dict["content"]["pageCount"]
+        # 对获取到的文本进行解析
+        soup = BeautifulSoup(html,'lxml')
+        # 从解析文件中通过select选择器定位指定的元素，返回一个列表
+        result_count = soup.select("dt")
+        result_count = result_count[0].encode('gbk')
+        result_count = filter(str.isdigit, result_count)
+        print 'result_count--------',result_count
+        resultCount = int(result_count)
+        if resultCount%20==0:
+            page_count = resultCount/20
         else:
-            pacgeCount = 0
-        if content_dict.has_key("content") and content_dict["content"].has_key("resultCount"):
-            resultCount = content_dict["content"]["resultCount"]
-        else:
-            resultCount=0
+            page_count = resultCount/20 + 1
+        print 'page_count--------',page_count
+        pacgeCount = int(page_count)
+#        resultCount = int(result_count)
+
         return pacgeCount,resultCount
-    def index_info(self,url,headers,i):
+        
+    def index_info(self,url,headers):
         '''
         获取一个页面中的所有的条目相关信息:
         页面中所有条目的标题、关键词、报道时间、报道内容以及图片链接
@@ -75,50 +74,49 @@ class Crawl_Xinhua():
         #返回的结果数组，为每个新闻的一些简略信息，包括title、des、url等
         result = []
         #爬虫获取url结果
+        html=self.getUrl_multiTry(url,headers)      
+         # 对获取到的文本进行解析
+        soup = BeautifulSoup(html,'html.parser')
+        
+        a = []
+        b = []
+        c = []
+        for news in soup.select('dd'):
+            h4 =  news.select('h4')
+            if len(h4) >0:
+                #新闻时间
+                time = news.select('span')[0].text
+                a.append(time)
+                #新闻标题
+                title = h4[0].text
+                b.append(title)
+                #新闻链接
+                href = h4[0].select('a')[0]['href']
+                c.append(href)         
 
-        html=self.getUrl_multiTry(url,headers)
-
-        #解析返回的json结果
-#        content_dict = json.loads(html)
-#        if content_dict.has_key("content") and content_dict["content"].has_key("results") and content_dict["content"].has_key("results")!=None:
-        soup = BeautifulSoup(html, "lxml")
-        titles = soup.find_all('a', {'href' : re.compile('link.php\?targetpage=http\://news.*')})
-        title_list = [j.get_text().encode('utf8') for j in titles]
-        contents = soup.find_all('p')
-#        content_list = [j.get_text().encode('utf8').strip('\xe3\x80\x80\xe3\x80\x80') for j in contents]
-        content_list = [j.get_text().encode('utf8') for j in contents]
-        dates = soup.find_all('span', {'class' : 'tim'})
-        date_list = [j.get_text()[5:].encode('utf8') for j in dates]
-        url_list = [l['href'].split('&')[0][20:].encode('utf8') for l in titles]
-        if i == 1:
-            del content_list[0]
-            del content_list[0]
-
-        for j in range(len(title_list)):
-            titleStr = title_list[j]
-#            if titleStr in self.titles:
+        for j in range(len(b)):
+            url_temp ='http://www.guancha.cn' + str(c[j])
+#            time = str(items[i].get_text()).split('\n')[5]
+#            titleStr = str(items[i].get_text()).split('\n')[-3]
+#            if titleStr  in self.titles:
 #                continue
 #            self.titles.append(titleStr)
             index_result={}
-            index_result["title"]=titleStr
-            index_result["des"]=index_result["content"]=content_list[j]
-            index_result["reporttime"]=date_list[j]
-            index_result["url"]=url_list[j]
-            index_result["img"]=""
-            '''
-            if(j["des"]!=None):
-                des= "".join(j["des"])
-                soup = BeautifulSoup(des, 'html.parser', from_encoding='utf-8')
-                des = soup.get_text()
-                index_result["des"]=des
-            else:
-                index_result["des"]=""
-            '''
+            index_result["title"]=b[j]
+            index_result["des"]=""
+            index_result["content"]=""
+            index_result["pubtime"]=a[j]
+            index_result["url"]=url_temp
+#            index_result["img"]=""
+
+#            index_result["title"]=titleStr
+#            index_result["imgUrl"]=""
+
+            index_result["keyword"] = 'img'
             result.append(index_result)
         return result
     def get_html_soup_txt(self,url,headers):#获取解编码后的HTML
         html = None
-
 
         html=self.getUrl_multiTry(url,headers)
         #fout = codecs.open("out3.txt",'w','utf-8')
@@ -127,7 +125,6 @@ class Crawl_Xinhua():
         soup=BeautifulSoup(html, 'html.parser', from_encoding='utf-8') 
         return soup
     
-    #get_html_soup_txt(urlTxt,my_headers)
     def get_html_soup(self,url,headers):#获取解编码后的HTML
         '''
         获取页面编码后的内容
@@ -188,14 +185,19 @@ class Crawl_Xinhua():
             text=texts[index]
             content_text += text.get_text()
         result["content"]=content_text
-        try:
-            result["time"]=soup.find('div',class_="sj").get_text()
-        except:
-            result["time"]=""
-        try:
-            result["source"]=soup.find('div',class_="ly").get_text()
-        except:
-            result["source"]=""
+        print result["content"]
+#        try:
+#            temp_url = soup.find('div',class_="media")
+#            result["imgUrl"] = str(temp_url).split('src="')[1].split('"')[0]
+#           print 'imgurl-----------',result["imgUrl"]
+#        except:
+#            result["img"]=""
+#        try:
+ #           temp_name = soup.find('div',class_="media")
+#            result["imgName"] = str(temp_name).split('small>')[1].replace('</','')
+ #           print 'imgname-------------',result["imgName"]
+#        except:
+#            result["imgName"]=""
         return result
     
     def clean_chinese_character(self,text):
@@ -244,63 +246,62 @@ class Crawl_Xinhua():
         stopFlag = False
         CrawlData={}
         #FilterData={}
-        pages,indexcount = 2275, 22757
+        pages,indexcount = self.get_page_count(self.starturl,self.my_headers)
         fields = ["reporttime","reporter","title","sitename","keyword","content","imgUrl"]
         #根据是否需要记录文件来进行
         EventInfoExtract = fact_triple_extraction1chen.EventInfoExtract(r"3.3.0\ltp_data",'out123.txt')
-#        index = 0
+        index = 0
         #遍历所有的新闻页
         for i in range(1,pages+1):
             #得到当前页的url
-            urls =self.starturl.replace("page=1","page=%d" % i)
+            urls =self.starturl.replace("pi=1","pi=%d" % i)
             #返回数组对象，每个元素表示一条新闻的简略信息
-            infodexs = self.index_info(urls,self.my_headers,i)
+            infodexs = self.index_info(urls,self.my_headers)
             if len(infodexs)>0:
-                csv_data = []
                 for infodex in infodexs:
                     #判断是否达到终止天数
-                    
                     if self.deadlineTime!=0 and infodex["reporttime"][0:10]<self.deadlineTime: #终止爬取
                         stopFlag=True
                         if(EventInfoExtract.segmentor != None): 
                             EventInfoExtract.release_module()
                         break
-            
-#                    if(infodex["keyword"]=="视频"):
-#                        continue
+                    if(infodex["keyword"]=="视频"):
+                        continue
                     print "=====================新闻信息=========================="
                     print infodex["url"]
-#                    body = self.get_news_body(infodex["url"],self.my_headers)
-#                    if body!=None:
-#                        infodex["content"]=body["content"]
-#                        infodex["reporter"]=u"新华社"
-#                    index+=1
+                    body = self.get_news_body(infodex["url"],self.my_headers)
+                    if body!=None:
+                        infodex["content"]=body["content"]
+                        infodex["reporter"]=u"观察者"
+#                        infodex["imgUrl"]=body["imgUrl"]
+ #                       infodex["imgName"]=body["imgName"]
+                    index+=1
                     #恢复为原来的段落
-#                    datas = infodex["content"].split(u"　　")
-#                    EventInfoExtract.InitModule()
-#                
-#                    #print '数据-----------------', datas
-#                    for data in datas:
-#                        print data.encode("utf-8")
-#
-#                        if len(data.encode("utf-8"))<30 or data.encode("utf-8")==None:
-#                            continue
-#                        TimeAndAddress=EventInfoExtract.addresssTime_extract(data.encode("utf-8"))
-#                        #print TimeAndAddress
-#                        fact_attribute = EventInfoExtract.fact_attribute_from_text(data.encode("utf-8"))
-#                        orgnization = EventInfoExtract.organization_from_text(data.encode("utf-8"))
-#                        death_num,hurt_num,total_num = EventInfoExtract.death_num_from_text(data.encode("utf-8"))
-#                        if TimeAndAddress[0]["date"]=="" and TimeAndAddress[0]["address"]=="":
-#                            continue
-#                        print '''  
-#    时间\t地点\t事件类型\t攻击组织\t伤亡总人数\t死亡人数\t受伤人数
-#    %s--%s--%s--%s--%s--%s--%s'''%(TimeAndAddress[0]['date'],TimeAndAddress[0]['address'],fact_attribute,orgnization,total_num,death_num,hurt_num)
-#                    # print("start to releases")
+                    datas = infodex["content"].split(u"　　")
+                    EventInfoExtract.InitModule()
+                
+                    print '数据-----------------', datas
+                    for data in datas:
+                        print data.encode("utf-8")
+
+                        if len(data.encode("utf-8"))<30 or data.encode("utf-8")==None:
+                            continue
+                        TimeAndAddress=EventInfoExtract.addresssTime_extract(data.encode("utf-8"))
+                        #print TimeAndAddress
+                        fact_attribute = EventInfoExtract.fact_attribute_from_text(data.encode("utf-8"))
+                        orgnization = EventInfoExtract.organization_from_text(data.encode("utf-8"))
+                        death_num,hurt_num,total_num = EventInfoExtract.death_num_from_text(data.encode("utf-8"))
+                        if TimeAndAddress[0]["date"]=="" and TimeAndAddress[0]["address"]=="":
+                            continue
+                        print '''  
+    时间\t地点\t事件类型\t攻击组织\t伤亡总人数\t死亡人数\t受伤人数
+    %s--%s--%s--%s--%s--%s--%s'''%(TimeAndAddress[0]['date'],TimeAndAddress[0]['address'],fact_attribute,orgnization,total_num,death_num,hurt_num)
+                    # print("start to releases")
 
                     #将新闻的原文也进行保存
 
 #                    imgUrl=infodex["imgUrl"]
-#                    imgName=""
+#                    imgName=infodex["imgName"]
 #                    if(imgUrl!=None and imgUrl!=""):
 #                        imgName=imgUrl.split("/")[-1]
 #                        urlretrieve("http://tpic.home.news.cn/xhCloudNewsPic/"+imgUrl,"./imgs/"+ imgName)
@@ -308,40 +309,42 @@ class Crawl_Xinhua():
                     news={}
                     news["title"]=infodex["title"]
                     news["des"]=infodex["des"]
-                    news["pubtime"] =infodex["reporttime"]
+                    news["pubtime"] =infodex["pubtime"]
                     news["content"]=infodex["content"]
 #                    news["img"]=imgName
                     news["url"]=infodex["url"]
-                    csv_data.append(news)
-#                    news['time']=TimeAndAddress[0]['date']
-#                    news['address']=TimeAndAddress[0]['address']
-#                    news['type']=fact_attribute
 
-#                    if(total_num!=None):
-#                        news['total']="伤亡:" + total_num
-#                    else:
-#                        if death_num==None:
-#                            death_num="0"
-#                        if hurt_num==None:
-#                            hurt_num="0"
-#                        # print death_num, hurt_num
-#                        news['total']="死亡：" + death_num + "，受伤：" + hurt_num
-#                    news["gname"]=orgnization
-#                    news['nwound']=hurt_num
-#                    news['nkill']=death_num
+                    news['time']=TimeAndAddress[0]['date']
+                    news['address']=TimeAndAddress[0]['address']
+                    news['type']=fact_attribute
+
+                    if(total_num!=None):
+                        news['total']="伤亡:" + total_num
+                    else:
+                        if death_num==None:
+                            death_num="0"
+                        if hurt_num==None:
+                            hurt_num="0"
+                        # print death_num, hurt_num
+                        news['total']="死亡：" + death_num + "，受伤：" + hurt_num
+                    news['gname']=orgnization
+                    news['nwound']=hurt_num
+                    news['nkill']=death_num
 
                     # insertSql = db_connect.generateSQL(news)
                     # print insertSql
                     # db_connect.insertOneData(insertSql)
+                    csv_data = []
+                    csv_data.append(news)
+                    self.save_to_file(csv_data, 'guachazhe.csv', i)
 
-
-                    # PostData(data,hosturl)
-#                    EventInfoExtract.release_module()
+                # PostData(data,hosturl)
+                EventInfoExtract.release_module()
 
                 if stopFlag ==True:
                     print "sTOPP ING"
                     break
-            self.save_to_file(csv_data, 'cctv.csv', i)
+
         if(EventInfoExtract.segmentor != None):
             EventInfoExtract.release_module()
         sys.exit(0)
@@ -358,13 +361,24 @@ class Crawl_Xinhua():
         headerflag = True
         if os.path.exists(file):
             headerflag = False
-        with codecs.open(file, 'ab+', 'gbk') as f:
+        with codecs.open(file, 'ab+', 'utf8') as f:
             f_csv = csv.DictWriter(f, headers)
             if headerflag:
                 f_csv.writeheader()
             f_csv.writerows(data)
         print 'page %d save to \'%s\' sucessfully!' % (page, file)
+        
+        
+    def get_content(self,html):
+        # 内容分割的标签
+        soup = BeautifulSoup(html,'lxml')
+        #content = soup.select("ul.list > h3. ")
+        content = soup.select("h3.  > a.modeless ")
+        print '-----------内容',content[0]['title']
+        print len(content)
 
+        return content # 得到搜索列表的新闻标题和链接
+    
     def getUrl_multiTry(self,url,headers):
         time.sleep(1)
         maxTryNum = 10
@@ -374,7 +388,15 @@ class Crawl_Xinhua():
                 req = urllib2.Request(url)
                 req.add_header("User-Agent", randddom_header)
                 req.add_header("GET", url)
+                
+                proxy_info = { 'host' : 'imagesoft.dynu.com',
+                              'port' : 8000}   #设置你想要使用的代理  
+                proxy_support = urllib2.ProxyHandler({"http" : "http://%(host)s:%(port)d" % proxy_info})       
+                opener = urllib2.build_opener(proxy_support)        
+                urllib2.install_opener(opener)
+                
                 html = urllib2.urlopen(req).read().decode(encoding="utf8", errors='ignore')
+                #html = urllib2.urlopen(req).read()
                 return html
             except:
                 if tries < (maxTryNum - 1):
@@ -387,7 +409,7 @@ class Crawl_Xinhua():
 #获取新闻的标题和链接
 if __name__=="__main__":
     #print "hello world"
-    xinhuaCrawl = Crawl_Xinhua(timeFrame=100,saveFile=True)
+    xinhuaCrawl = Crawl_Xinhua(timeFrame=0,saveFile=True)
     xinhuaCrawl.start_crawl()
     # db_connect.close()
     '''
