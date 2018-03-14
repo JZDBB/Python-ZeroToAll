@@ -323,7 +323,7 @@ class Crawl_Xinhua():
                         death_num,hurt_num,total_num = EventInfoExtract.death_num_from_text(data.encode("utf-8"))
                         if TimeAndAddress[0]["date"]=="" and TimeAndAddress[0]["address"]=="":
                             continue
-                        print '''  
+                        print '''
     时间\t地点\t事件类型\t攻击组织\t伤亡总人数\t死亡人数\t受伤人数
     %s--%s--%s--%s--%s--%s--%s'''%(TimeAndAddress[0]['date'],TimeAndAddress[0]['address'],fact_attribute,orgnization,total_num,death_num,hurt_num)
                     # print("start to releases")

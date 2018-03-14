@@ -198,7 +198,7 @@ class Crawl_Xinhua():
                 new_text += text[i]
             else:
                 new_text += "_"
-        return new_text;
+        return new_text
     def createFile(self,fields,zhFileName):
         # 新建一个excel文件  
         zhFile = xlwt.Workbook(encoding='utf-8')  
@@ -356,7 +356,7 @@ class Crawl_Xinhua():
 #获取新闻的标题和链接
 if __name__=="__main__":
     #print "hello world"
-    xinhuaCrawl = Crawl_Xinhua(timeFrame=0,saveFile=True)
+    xinhuaCrawl = Crawl_Xinhua(timeFrame=100,saveFile=True)
     xinhuaCrawl.start_crawl()
     # db_connect.close()
     '''
