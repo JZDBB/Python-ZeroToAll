@@ -17,7 +17,7 @@ class UrlManager(object):
         if not isinstance(url, list):
             url = [url]
         for c_url in url:
-            if c_url not in self.new_urls and c_url not in self.old_urls:
+            if c_url not in self.new_urls:
                 self.new_urls.add(c_url)
 
     def add_new_urls(self, urls):

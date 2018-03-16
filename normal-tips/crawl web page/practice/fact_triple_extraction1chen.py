@@ -48,16 +48,16 @@ class EventInfoExtract():
         #print "正在加载LTP模型... ..."
         self.segmentor = Segmentor()
         #print os.path.join(self.MODELDIR, "cws.model")
-        self.segmentor.load(os.path.join(self.MODELDIR, "cws.model"))   #分词模型，单文件
+        self.segmentor.load("./3.3.0/ltp_data/cws.model")   #分词模型，单文件
         
         self.postagger = Postagger()
-        self.postagger.load(os.path.join(self.MODELDIR, "pos.model")) #词性标注模型，单文件
+        self.postagger.load("./3.3.0/ltp_data/pos.model") #词性标注模型，单文件
         
         self.parser = Parser()
-        self.parser.load(os.path.join(self.MODELDIR, "parser.model"))  #依存句法分析模型，单文件
+        self.parser.load( "./3.3.0/ltp_data/parser.model")  #依存句法分析模型，单文件
         
         self.recognizer = NamedEntityRecognizer()
-        self.recognizer.load(os.path.join(self.MODELDIR, "ner.model")) #命名实体识别模型，单文件
+        self.recognizer.load("./3.3.0/ltp_data/ner.model") #命名实体识别模型，单文件
         #print self.recognizer
 
     def release_module(self):

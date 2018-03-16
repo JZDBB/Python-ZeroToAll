@@ -1,19 +1,4 @@
 
-
-# 后期可以修改的！
-
-# 1、针对网站的域名进行爬取，中国日报网的域名上的所有网页应该都是相同格式的。可以用正则表达式
-# eg: http://world.chinadaily.com.cn/2017-04/05/content_28798021.htm
-# http://world.chinadaily.com.cn/   对应的格式
-# eg: http://cnews.chinadaily.com.cn/2017-04/04/content_28791640.htm
-# http://cnews.chinadaily.com.cn/   对应的格式
-
-# 2、注意，try可以用在调试，但是要记得打印出错误，同时兼顾单步调试，像爬虫这样的代码，用try except 来
-# 注意爬取网站不行就continue是很好的做法。
-
-# 3、to_join = [content_p[k].text for k in range(len(content_p))] 语句简单明了，通俗好用
-
-
 from baike_spider import url_manager, html_downloader, html_parser, html_outputer
 import fact_triple_extraction1chen
 
@@ -27,14 +12,14 @@ class SpiderMain(object):
 
     def craw(self, root_url):
         count = 1
-        for i in range(149):
-            start_url = root_url.replace("page=1", "page=%d" % count)
+        for i in range(2):#21
+            start_url = root_url.replace("offset=20", "offset=%d" % count)
             html = self.downloader.download(start_url)
             # print html
             new_urls = self.parser.parse(start_url, html)
             self.urls.add_new_urls(new_urls)
             print 'craw %d %s' % (count, start_url)
-            count = count + 1
+            count = count + 20
 
         count = 1
         while self.urls.has_new_url():
@@ -93,7 +78,7 @@ class SpiderMain(object):
 
             datas = []
             datas.append(news)
-            self.outputer.output_execl(datas, "ChinaDialy.csv", count)
+            self.outputer.output_execl(datas, "SputnikNews.csv", count)
             count = count + 1
 
         # self.urls.add_new_url(root_url) # crawl all page
@@ -117,6 +102,6 @@ class SpiderMain(object):
 
 
 if __name__=="__main__":
-    root_url = "http://search.chinadaily.com.cn/cn.jsp?searchText=%E6%81%90%E6%80%96%E8%A2%AD%E5%87%BB&page=1&strAuthor=&strFromdate=&strTodate=&usedate="
+    root_url = "http://sputniknews.cn/services/search/getmore/?search_area=all&query%5B%5D=%E6%81%90%E6%80%96%E8%A2%AD%E5%87%BB&limit=500&offset=20&sort=date&interval=period"
     obj_spider = SpiderMain()
     obj_spider.craw(root_url)
