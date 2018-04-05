@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# python2语法 仍需要调试 pytesser包异常导入
 # 1、导入Image包，打开图片：
 
 from PIL import Image
@@ -9,7 +10,7 @@ print pytesser.image_to_string(image)
 
 # 2、把彩色图像转化为灰度图像。RBG转化到HSI彩色空间，采用I分量：
 
-imgry = im.convert('L')
+imgry = image.convert('L')
 imgry.show()
 
 
