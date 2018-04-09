@@ -42,7 +42,7 @@ class SpiderMain(object):
             # print html
             new_urls = self.parser.parse(start_url, html)
             self.urls.add_new_urls(new_urls)
-            print 'craw %d %s' % (count, start_url)
+            print('craw %d %s' % (count, start_url))
             count = count + 1
 
         count = 1
@@ -70,8 +70,8 @@ class SpiderMain(object):
             death_num, hurt_num, total_num = EventInfoExtract.death_num_from_text(content.encode("utf-8"))
             # if TimeAndAddress[0]["date"] == "" and TimeAndAddress[0]["address"] == "":
             #     continue
-            print '''  time\t address\t type\t orgnize\t total\t dead\t hurt%s--%s--%s--%s--%s--%s--%s''' % (
-            TimeAndAddress[0]['date'], TimeAndAddress[0]['address'], fact_attribute, orgnization, total_num, death_num, hurt_num)
+            print('''  time\t address\t type\t orgnize\t total\t dead\t hurt%s--%s--%s--%s--%s--%s--%s''' % (
+            TimeAndAddress[0]['date'], TimeAndAddress[0]['address'], fact_attribute, orgnization, total_num, death_num, hurt_num))
 
             # basis datas
             news = {}
