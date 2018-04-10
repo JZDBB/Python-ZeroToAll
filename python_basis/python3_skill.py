@@ -11,7 +11,7 @@ python3 技巧篇
         bag[i] = bag[i] * 2
     可以写成：
 """
-print('1')
+print('1、')
 bag = [1, 2, 3, 4, 5]
 bag = [elem * 2 for elem in bag]
 print(bag)
@@ -29,7 +29,7 @@ print(bag)
     如果x是一个列表，你可以对它的元素进行迭代。如果你需要各元素索引，那就用enumerate函数。
     如下所示：
 """
-print('2')
+print('2、')
 bag = [1, 2, 3, 4, 5]
 for index, element in enumerate(bag):
     print(index, element)
@@ -38,7 +38,7 @@ for index, element in enumerate(bag):
 """
 3、元素互换：不需要中间变量
 """
-print('3')
+print('3、')
 a = 1
 b = 2
 a, b = b, a
@@ -47,7 +47,7 @@ print(a, b)
 """
 4、初始化列表
 """
-print('4')
+print('4、')
 bag1 = [0] * 10
 print(bag1)
 bag_of_bags = [[0]] * 5 # [[0], [0], [0], [0], [0]]
@@ -70,7 +70,7 @@ print(bag_of_bags1)
     你可以用.format来代替
     这样做：
 """
-print('5')
+print('5、')
 name = "Raymond"
 age = 22
 born_in = "Oakland, CA"
@@ -92,7 +92,7 @@ print(string)
     要是你需要所有的元素被返回，用个下划线_：
     zero, _ = binary
 """
-print('6')
+print('6、')
 def binary():
     return 0, 1
 zero, one = binary()
@@ -116,7 +116,7 @@ print(zero, one)
             print("Count of {}: {}".format(i, 0))
 
 """
-print('7')
+print('7、')
 # 用get是个更好的办法。
 countr = {}
 bag = [2, 3, 1, 2, 5, 6, 7, 9, 2, 7]
@@ -155,7 +155,7 @@ countr = {num: bag.count(num) for num in bag}
         if index % 2 == 0:
             print(elem)
 """
-print('8')
+print('8、')
 # 应该这样来做：
 bag = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 for elem in bag[::2]:
@@ -167,11 +167,130 @@ print(bag)
 # 可以用list[::-1]很酷的翻转列表。
 
 """
+9、遍历两个集合
+    更好的方法
+    zip在内存中生成一个新的列表，需要更多的内存。izip比zip效率更高。
+    注意：在Python 3中，izip改名为zip，并替换了原来的zip成为内置函数。
+"""
+print('9、')
+names = ['raymond', 'rachel', 'matthew']
+colors = ['red', 'green', 'blue', 'yellow']
+for name, color in zip(names, colors):
+    print(name, '--->', color)
+
+
+"""
 10、tab键还是空格键
     长时间来看，将tab和空格混在一起会造成灾难，你会看到IndentationError: unexpected indent。
     可以在写代码时用空格来定义tab。
     大多数Python用户是用4个空格。
 """
+
+
+"""
+11、自定义排序顺序
+    colors = ['red', 'green', 'blue', 'yellow']
+    def compare_length(c1, c2):
+        if len(c1) < len(c2): return -1
+        if len(c1) > len(c2): return 1
+        return 0
+    print sorted(colors, cmp=compare_length)
+    更好的方法:
+    print sorted(colors, key=len)
+    第一种方法效率低而且写起来很不爽。另外，Python 3已经不支持比较函数了。
+
+"""
+print('11、')
+colors = ['red', 'green', 'blue', 'yellow']
+print(sorted(colors, key=len))
+
+"""
+def find(seq, target):
+    for i, value in enumerate(seq):
+        if value == target:
+            break
+    else:
+        return -1
+    return i
+    for执行完所有的循环后就会执行else。
+"""
+
+
+"""
+12、遍历字典的key
+    d = {'matthew': 'blue', 'rachel': 'green', 'raymond': 'red'}
+    for k in d:
+        print k
+    for k in d.keys():
+        if k.startswith('r'):
+            del d[k]
+    什么时候应该使用第二种而不是第一种方法？当你需要修改字典的时候。
+    如果你在迭代一个东西的时候修改它，那就是在冒天下之大不韪，接下来发生什么都活该。
+    d.keys()把字典里所有的key都复制到一个列表里。然后你就可以修改字典了。
+    注意：如果在Python 3里迭代一个字典你得显示地写：list(d.keys())，因为d.keys()返回的是一个“字典视图”(一个提供字典key的动态视图的迭代器)。详情请看文档
+"""
+
+"""
+13、提高可读性
+    "位置参数和下标很漂亮
+     但关键字和名称更好
+     第一种方法对计算机来说很便利
+     第二种方法和人类思考方式一致"
+
+    (1)用关键字参数提高函数调用的可读性
+    twitter_search('@obama', False, 20, True)
+    更好的方法
+    twitter_search('@obama', retweets=False, numtweets=20, popular=True)
+
+    (2)第二种方法稍微(微秒级)慢一点，但为了代码的可读性和开发时间，值得。
+    用namedtuple提高多个返回值的可读性
+    # 老的testmod返回值
+    doctest.testmod()
+    # (0, 4)
+    # 测试结果是好是坏？你看不出来，因为返回值不清晰。
+    更好的方法
+    # 新的testmod返回值, 一个namedtuple
+    doctest.testmod()
+    # TestResults(failed=0, attempted=4)
+    namedtuple是tuple的子类，所以仍适用正常的元组操作，但它更友好。
+    创建一个nametuple
+    TestResults = namedTuple('TestResults', ['failed', 'attempted'])
+    unpack序列
+    p = 'Raymond', 'Hettinger', 0x30, 'python@example.com'
+
+    # 其它语言的常用方法/习惯
+    fname = p[0]
+    lname = p[1]
+    age = p[2]
+    email = p[3]
+    更好的方法
+    fname, lname, age, email = p
+
+    第二种方法用了unpack元组，更快，可读性更好。
+    更新多个变量的状态
+    def fibonacci(n):
+        x = 0
+        y = 1
+        for i in range(n):
+            print x
+            t = y
+            y = x + y
+            x = t
+    更好的方法
+    def fibonacci(n):
+        x, y = 0, 1
+        for i in range(n):
+            print x
+            x, y = y, x + y
+    第一种方法的问题
+    x和y是状态，状态应该在一次操作中更新，分几行的话状态会互相对不上，这经常是bug的源头。
+    操作有顺序要求
+    太底层太细节
+    第二种方法抽象层级更高，没有操作顺序出错的风险而且更效率更高。
+"""
+
+
+
 
 
 
