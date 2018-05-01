@@ -3,16 +3,20 @@
 2、多行文本输入
 
 """
-# from ulits import Data
+from ulits import Data
 import wx
 import csv
 import argparse
+import codecs
 
 def write_csv(path, list_stream):
-    csvFile = open(path, "w")
+    csvFile = codecs.open(path, "w", 'utf-8')
     for stream in list_stream:
-        content = ','.join(stream) + '\n'
-        csvFile.write(content)
+        try:
+            content = ','.join(stream) + '\n'
+            csvFile.write(content)
+        except Exception as e:
+            a=1
     # writer = csv.writer(csvFile)
     # for stream in list_stream:
     #     writer.writerow(stream)
@@ -189,14 +193,15 @@ class CleanerFrame(wx.Frame):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='data cleaner')
-    group = parser.add_mutually_exclusive_group()
-    parser.add_argument('-c', '--cnpath', help='CN path', type=str)
-    parser.add_argument('-e', '--enpath', help='EN path', type=str)
-    parser.add_argument('-i', '--id', help='ID', type=str)
-    args = parser.parse_args()
+    # parser = argparse.ArgumentParser(description='data cleaner')
+    # group = parser.add_mutually_exclusive_group()
+    # parser.add_argument('-c', '--cnpath', help='CN path', type=str)
+    # parser.add_argument('-e', '--enpath', help='EN path', type=str)
+    # parser.add_argument('-i', '--id', help='ID', type=str)
+    # args = parser.parse_args()
     app = wx.App()
-    frame = CleanerFrame(args.cnpath, args.enpath, int(args.id))
+    # frame = CleanerFrame(args.cnpath, args.enpath, int(args.id))
+    frame = CleanerFrame('terrorism_zh_1.csv', 'globalterrorismdb_0617dist.csv', 197001000003)
     frame.Show()
     app.MainLoop()
 
