@@ -6,6 +6,7 @@
 # from ulits import Data
 import wx
 import csv
+import argparse
 
 def write_csv(path, list_stream):
     csvFile = open(path, "w")
@@ -187,12 +188,16 @@ class CleanerFrame(wx.Frame):
         self.staticReform.SetLabel('保存成功')
 
 
-
-
-
 if __name__ == '__main__':
-    
+    parser = argparse.ArgumentParser(description='data cleaner')
+    group = parser.add_mutually_exclusive_group()
+    parser.add_argument('-c', '--cnpath', help='CN path', type=str)
+    parser.add_argument('-e', '--enpath', help='EN path', type=str)
+    parser.add_argument('-i', '--id', help='ID', type=str)
+    args = parser.parse_args()
     app = wx.App()
-    frame = CleanerFrame('Chinese.csv', 'English.csv', 197001010002)
+    frame = CleanerFrame(args.cnpath, args.enpath, int(args.id))
     frame.Show()
     app.MainLoop()
+
+# python3 data_cleaner.py -c 'Chinese.csv' -e 'English.csv', -i 197000000002
