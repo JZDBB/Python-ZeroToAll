@@ -1,6 +1,6 @@
 """
-1、输入
-2、多行文本输入
+需要改的是main里面的frame = CleanerFrame(中文文档路径, 英文文档路径, 起始的事件id)
+需要注意的是把文档另存为csv格式再输入
 
 """
 from ulits import Data
@@ -8,6 +8,9 @@ import wx
 import csv
 import argparse
 import codecs
+ROW = 30
+EN_COL = 20
+CN_COL = 120
 
 def write_csv(path, list_stream):
     csvFile = codecs.open(path, "w", 'utf-8')
@@ -42,11 +45,48 @@ def read_csv(path):
 
     return list_id, list_num, dict_id
 
+class readDialog(wx.Dialog):
+    def __init__(self):
+        wx.Dialog.__init__(self, None, -1, 'data input', size=(300, 100))
+        panel = wx.Panel(self, -1)
+
+        sizer = wx.BoxSizer(wx.VERTICAL)
+        cnStaticText = wx.StaticText(panel, -1, '中文表路径:')
+        self.cnText = wx.TextCtrl(panel, value='', size=(230, 30))
+        enStaticText = wx.StaticText(panel, -1, '英文表路径')
+        self.enText = wx.TextCtrl(panel, value='', size=(230, 30))
+        IDStaticText = wx.StaticText(panel, -1, '事件ID')
+        self.idText = wx.TextCtrl(panel, value='', size=(230, 30))
+        openButton = wx.Button(panel, label='OK', pos=(120, 100), size=(110, 30))
+        sizer.Add(cnStaticText, 0)
+        sizer.Add(self.cnText, 0)
+        sizer.Add(enStaticText, 0)
+        sizer.Add(self.enText, 0)
+        sizer.Add(IDStaticText, 0)
+        sizer.Add(self.idText, 0)
+        sizer.Add(openButton, 0)
+
+        panel.SetSizer(sizer)
+        sizer.SetSizeHints(self)
+        panel.Layout()
+        panel.SetFocus()
+
+        openButton.Bind(wx.EVT_BUTTON, self.onClickOpen)
+
+    def onClickOpen(self, event):
+        cn_path = self.cnText.GetValue()
+        en_path = self.enText.GetValue()
+        id_n = self.idText.GetValue()
+        app = wx.App()
+        frame = CleanerFrame(cn_path, en_path, id_n)
+        frame.Show()
+        app.MainLoop()
+
 
 class CleanerFrame(wx.Frame):
     def __init__(self, cn_path, en_path, id):
         wx.Frame.__init__(self, None, -1, "data clean",
-                          size=(600, 400))
+                          size=(1000, 800))
 
         self.id_cn, self.list_cn, self.dict_cn = read_csv(cn_path)
         self.id_en, self.list_en, self.dict_en = read_csv(en_path)
@@ -69,10 +109,42 @@ class CleanerFrame(wx.Frame):
         downButton.SetDefault()
         saveButton = wx.Button(panel, -1, '保存', pos=(250, 250))
         self.staticText_id = wx.StaticText(panel, -1, label=str_id, pos=(0, 10))
-        staticText_en = wx.StaticText(panel, -1, label='EN', pos = (20, 30))
-        self.enText = wx.TextCtrl(panel, value=init_en, pos=(20, 50), size=(500, 80), style = wx.TE_MULTILINE|wx.HSCROLL)
-        staticText_cn = wx.StaticText(panel, -1, label='CN', pos=(20, 140))
-        self.cnText = wx.TextCtrl(panel, value=init_cn, pos=(20, 160), size=(500, 80), style = wx.TE_MULTILINE|wx.HSCROLL)
+
+        staticText_en = wx.StaticText(panel, -1, label='EN', pos = (EN_COL, ROW))
+        self.country_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 20), size=(200, 40), style = wx.TE_MULTILINE|wx.HSCROLL)
+        self.provstate_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 40), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.city_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 60), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.summary_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 80), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.targtype1_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 100), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.corp1_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 120), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.target1_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 140), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.gname_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 160), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.motive_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 180), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.weapdetail_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 200), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.propcomment_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 220), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.ransomnote_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 240), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.hostkidoutcome_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 260), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.addnotes_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 280), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.scite1_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 300), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+
+        staticText_cn = wx.StaticText(panel, -1, label='CN', pos=(EN_COL, ROW))
+        self.country_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.provstate_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.city_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.summary_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.targtype1_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.corp1_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.target1_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.gname_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.motive_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.weapdetail_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.propcomment_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.ransomnote_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.hostkidoutcome_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.addnotes_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.scite1_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+
+
         self.staticReform = wx.StaticText(panel, -1, label='', pos=(20, 300))
 
         sizer.Add(self.staticText_id, 0)
@@ -199,10 +271,14 @@ if __name__ == '__main__':
     # parser.add_argument('-e', '--enpath', help='EN path', type=str)
     # parser.add_argument('-i', '--id', help='ID', type=str)
     # args = parser.parse_args()
+
     app = wx.App()
-    # frame = CleanerFrame(args.cnpath, args.enpath, int(args.id))
-    frame = CleanerFrame('terrorism_zh_1.csv', 'globalterrorismdb_0617dist.csv', 197001000003)
-    frame.Show()
-    app.MainLoop()
+    dialog = readDialog()
+    result = dialog.ShowModal()
+    if result == wx.ID_CANCEL:
+        print('cancel')
+    else:
+        pass
+    dialog.Destroy()
 
 # python3 data_cleaner.py -c 'Chinese.csv' -e 'English.csv', -i 197000000002
