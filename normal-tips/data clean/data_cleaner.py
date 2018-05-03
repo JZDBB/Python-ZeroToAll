@@ -10,7 +10,7 @@ import argparse
 import codecs
 ROW = 30
 EN_COL = 20
-CN_COL = 120
+CN_COL = 500
 
 def write_csv(path, list_stream):
     csvFile = codecs.open(path, "w", 'utf-8')
@@ -101,57 +101,45 @@ class CleanerFrame(wx.Frame):
         init_en = init_en[self.id_cn[self.col + 1]]
         init_cn = self.dict_cn[self.list_cn[self.row]]
         init_cn = init_cn[self.id_cn[self.col + 1]]
-        str_id = 'eventid = ' + self.list_cn[self.row] + '，id = ' + self.id_cn[self.col + 1]
+        str_id = 'eventid = ' + self.list_cn[self.row]
         panel = wx.Panel(self, -1)
         sizer = wx.BoxSizer(wx.VERTICAL)
-        upButton = wx.Button(panel, -1, '上一条', pos=(20, 250))
-        downButton = wx.Button(panel, -1, '下一条', pos=(150, 250))
+        upButton = wx.Button(panel, -1, '上一条', pos=(20, 500))
+        downButton = wx.Button(panel, -1, '下一条', pos=(150, 500))
         downButton.SetDefault()
-        saveButton = wx.Button(panel, -1, '保存', pos=(250, 250))
+        saveButton = wx.Button(panel, -1, '保存', pos=(250, 500))
         self.staticText_id = wx.StaticText(panel, -1, label=str_id, pos=(0, 10))
 
         staticText_en = wx.StaticText(panel, -1, label='EN', pos = (EN_COL, ROW))
-        self.country_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 20), size=(200, 40), style = wx.TE_MULTILINE|wx.HSCROLL)
-        self.provstate_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 40), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.city_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 60), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.summary_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 80), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.targtype1_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 100), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.corp1_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 120), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.target1_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 140), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.gname_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 160), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.motive_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 180), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.weapdetail_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 200), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.propcomment_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 220), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.ransomnote_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 240), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.hostkidoutcome_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 260), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.addnotes_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 280), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.scite1_en = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 300), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.en1 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 20), size=(400, 60), style = wx.TE_MULTILINE|wx.HSCROLL)
+        self.en2 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 90), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.en3 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 160), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.en4 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 230), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.en5 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 300), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
 
         staticText_cn = wx.StaticText(panel, -1, label='CN', pos=(EN_COL, ROW))
-        self.country_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.provstate_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.city_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.summary_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.targtype1_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.corp1_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.target1_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.gname_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.motive_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.weapdetail_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.propcomment_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.ransomnote_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.hostkidoutcome_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.addnotes_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.scite1_cn = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(200, 40), style=wx.TE_MULTILINE | wx.HSCROLL)
-
+        self.cn1 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.cn2 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 90), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.cn3 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 160), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.cn4 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 230), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.cn5 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 300), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
 
         self.staticReform = wx.StaticText(panel, -1, label='', pos=(20, 300))
 
         sizer.Add(self.staticText_id, 0)
         sizer.Add(staticText_en, 0)
-        sizer.Add(self.enText, 0)
+        sizer.Add(self.en1, 0)
+        sizer.Add(self.en2, 0)
+        sizer.Add(self.en3, 0)
+        sizer.Add(self.en4, 0)
+        sizer.Add(self.en5, 0)
         sizer.Add(staticText_cn, 0)
-        sizer.Add(self.cnText, 0)
+        sizer.Add(self.cn1, 0)
+        sizer.Add(self.cn2, 0)
+        sizer.Add(self.cn3, 0)
+        sizer.Add(self.cn4, 0)
+        sizer.Add(self.cn5, 0)
+
         sizer.Add(self.staticReform, 0)
 
         upButton.Bind(wx.EVT_BUTTON, self.onClickUp)
