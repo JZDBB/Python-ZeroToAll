@@ -12,6 +12,10 @@ ROW = 30
 EN_COL = 20
 CN_COL = 500
 
+TXT_ID = ['country_txt','provstate','city','summary','targtype1_txt',
+          'corp1','target1','gname','motive','weapdetail',
+          'propcomment','ransomnote','hostkidoutcome_txt','addnotes','scite1']
+
 def write_csv(path, list_stream):
     csvFile = codecs.open(path, "w", 'utf-8')
     for stream in list_stream:
@@ -43,7 +47,7 @@ def read_csv(path):
         dict_id[mesg[0].strip()] = dict_mesg
         dict_mesg = {}
 
-    return list_id, list_num, dict_id
+    return list_num, dict_id
 
 class readDialog(wx.Dialog):
     def __init__(self):
@@ -88,20 +92,26 @@ class CleanerFrame(wx.Frame):
         wx.Frame.__init__(self, None, -1, "data clean",
                           size=(1000, 800))
 
-        self.id_cn, self.list_cn, self.dict_cn = read_csv(cn_path)
-        self.id_en, self.list_en, self.dict_en = read_csv(en_path)
-        self.id_cn[0] = 'enventid'
+        self.list_cn, self.dict_cn = read_csv(cn_path)
+        self.list_en, self.dict_en = read_csv(en_path)
         self.row = self.list_cn.index(str(id))
-        self.col = 0
-        key = self.list_cn[self.row]
-        init_en = self.dict_en[key]
+        self.count = 0
+        event_str_cn = self.dict_cn[str(id)]
+        event_str_en = self.dict_en[str(id)]
+        tx_en = []
+        tx_cn = []
+        for i in range(5):
+            tx_en.append(event_str_en[TXT_ID[self.row * 5 + i]])
+            tx_cn.append(event_str_cn[TXT_ID[self.row * 5 + i]])
         # init_en = init_en[id_cn[self.col + 1]]
-        while not init_en.__contains__(self.id_cn[self.col + 1]):
-            self.col += 1
-        init_en = init_en[self.id_cn[self.col + 1]]
-        init_cn = self.dict_cn[self.list_cn[self.row]]
-        init_cn = init_cn[self.id_cn[self.col + 1]]
+        # while not init_en.__contains__(self.id_cn[self.col + 1]):
+        #     self.col += 1
+        # init_en = init_en[self.id_cn[self.col + 1]]
+        # init_cn = self.dict_cn[self.list_cn[self.row]]
+        # init_cn = init_cn[self.id_cn[self.col + 1]]
         str_id = 'eventid = ' + self.list_cn[self.row]
+
+
         panel = wx.Panel(self, -1)
         sizer = wx.BoxSizer(wx.VERTICAL)
         upButton = wx.Button(panel, -1, '上一条', pos=(20, 500))
@@ -111,18 +121,18 @@ class CleanerFrame(wx.Frame):
         self.staticText_id = wx.StaticText(panel, -1, label=str_id, pos=(0, 10))
 
         staticText_en = wx.StaticText(panel, -1, label='EN', pos = (EN_COL, ROW))
-        self.en1 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 20), size=(400, 60), style = wx.TE_MULTILINE|wx.HSCROLL)
-        self.en2 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 90), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.en3 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 160), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.en4 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 230), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.en5 = wx.TextCtrl(panel, value=init_en, pos=(EN_COL, ROW + 300), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.en1 = wx.TextCtrl(panel, value=tx_en[0], pos=(EN_COL, ROW + 20), size=(400, 60), style = wx.TE_MULTILINE|wx.HSCROLL)
+        self.en2 = wx.TextCtrl(panel, value=tx_en[1], pos=(EN_COL, ROW + 90), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.en3 = wx.TextCtrl(panel, value=tx_en[2], pos=(EN_COL, ROW + 160), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.en4 = wx.TextCtrl(panel, value=tx_en[3], pos=(EN_COL, ROW + 230), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.en5 = wx.TextCtrl(panel, value=tx_en[4], pos=(EN_COL, ROW + 300), size=(400, 60), style=wx.TE_MULTILINE | wx.HSCROLL)
 
-        staticText_cn = wx.StaticText(panel, -1, label='CN', pos=(EN_COL, ROW))
-        self.cn1 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 20), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.cn2 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 90), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.cn3 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 160), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.cn4 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 230), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
-        self.cn5 = wx.TextCtrl(panel, value=init_en, pos=(CN_COL, ROW + 300), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
+        staticText_cn = wx.StaticText(panel, -1, label='CN', pos=(CN_COL, ROW))
+        self.cn1 = wx.TextCtrl(panel, value=tx_cn[0], pos=(CN_COL, ROW + 20), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.cn2 = wx.TextCtrl(panel, value=tx_cn[1], pos=(CN_COL, ROW + 90), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.cn3 = wx.TextCtrl(panel, value=tx_cn[2], pos=(CN_COL, ROW + 160), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.cn4 = wx.TextCtrl(panel, value=tx_cn[3], pos=(CN_COL, ROW + 230), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
+        self.cn5 = wx.TextCtrl(panel, value=tx_cn[4], pos=(CN_COL, ROW + 300), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
 
         self.staticReform = wx.StaticText(panel, -1, label='', pos=(20, 300))
 
