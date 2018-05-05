@@ -117,7 +117,7 @@ class CleanerFrame(wx.Frame):
         upButton = wx.Button(panel, -1, '上一条', pos=(20, 500))
         downButton = wx.Button(panel, -1, '下一条', pos=(150, 500))
         downButton.SetDefault()
-        saveButton = wx.Button(panel, -1, '保存', pos=(250, 500))
+        saveButton = wx.Button(panel, -1, '保存', pos=(280, 500))
         self.staticText_id = wx.StaticText(panel, -1, label=str_id, pos=(0, 10))
 
         staticText_en = wx.StaticText(panel, -1, label='EN', pos = (EN_COL, ROW))
@@ -176,7 +176,7 @@ class CleanerFrame(wx.Frame):
             self.count = 2
             self.row -= 1
             if self.row < 0:
-                self.row = len(self.dict_cn)
+                self.row = len(self.dict_cn) - 1
         str_id = self.list_cn[self.row]
         event_str_cn = self.dict_cn[str_id]
         event_str_en = self.dict_en[str_id]
