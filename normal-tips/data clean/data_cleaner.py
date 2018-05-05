@@ -101,8 +101,8 @@ class CleanerFrame(wx.Frame):
         tx_en = []
         tx_cn = []
         for i in range(5):
-            tx_en.append(event_str_en[TXT_ID[self.row * 5 + i]])
-            tx_cn.append(event_str_cn[TXT_ID[self.row * 5 + i]])
+            tx_en.append(event_str_en[TXT_ID[self.count * 5 + i]])
+            tx_cn.append(event_str_cn[TXT_ID[self.count * 5 + i]])
         # init_en = init_en[id_cn[self.col + 1]]
         # while not init_en.__contains__(self.id_cn[self.col + 1]):
         #     self.col += 1
@@ -158,94 +158,182 @@ class CleanerFrame(wx.Frame):
 
     def onClickUp(self, event):
         self.staticReform.SetLabel('')
-        value = self.cnText.GetValue()
-        init_cn = self.dict_cn[self.list_cn[self.row]]
-        init_cn[self.id_cn[self.col + 1]] = value
-        self.col -= 1
-        if self.col < 0:
-            self.col = len(self.id_cn) - 2
+        key = self.list_cn[self.row]
+        tx_cn1 = self.cn1.GetValue()
+        tx_cn2 = self.cn2.GetValue()
+        tx_cn3 = self.cn3.GetValue()
+        tx_cn4 = self.cn4.GetValue()
+        tx_cn5 = self.cn5.GetValue()
+        str_cn = self.dict_cn[key]
+        str_cn[TXT_ID[self.count * 5 + 0]] = tx_cn1
+        str_cn[TXT_ID[self.count * 5 + 1]] = tx_cn2
+        str_cn[TXT_ID[self.count * 5 + 2]] = tx_cn3
+        str_cn[TXT_ID[self.count * 5 + 3]] = tx_cn4
+        str_cn[TXT_ID[self.count * 5 + 4]] = tx_cn5
+
+        self.count -= 1
+        if self.count < 0:
+            self.count = 2
             self.row -= 1
             if self.row < 0:
-                self.row = len(self.list_cn) - 1
-        key = self.list_cn[self.row]
-        init_en = self.dict_en[key]
-        # init_en = init_en[id_cn[self.col + 1]]
-        while not init_en.__contains__(self.id_cn[self.col + 1]):
-            self.col -= 1
-            if self.col < 0:
-                self.col = len(self.id_cn) - 2
-                self.row -= 1
-                if self.row < 0:
-                    self.row = len(self.list_cn) - 1
-        init_en = init_en[self.id_cn[self.col + 1]]
-        init_cn = self.dict_cn[self.list_cn[self.row]]
-        init_cn = init_cn[self.id_cn[self.col + 1]]
-        while init_cn == '':
-            self.col -= 1
-            if self.col < 0:
-                self.col = len(self.id_cn) - 2
-                self.row -= 1
-                if self.row < 0:
-                    self.row = len(self.list_cn) - 1
-            key = self.list_cn[self.row]
-            init_en = self.dict_en[key]
-            # init_en = init_en[id_cn[self.col + 1]]
-            while not init_en.__contains__(self.id_cn[self.col + 1]):
-                self.col -= 1
-                if self.col < 0:
-                    self.col = len(self.id_cn) - 2
-                    self.row -= 1
-                    if self.row < 0:
-                        self.row = len(self.list_cn) - 1
-            init_en = init_en[self.id_cn[self.col + 1]]
-            init_cn = self.dict_cn[self.list_cn[self.row]]
-            init_cn = init_cn[self.id_cn[self.col + 1]]
+                self.row = len(self.dict_cn)
+        str_id = self.list_cn[self.row]
+        event_str_cn = self.dict_cn[str_id]
+        event_str_en = self.dict_en[str_id]
+        tx_en = []
+        tx_cn = []
+        for i in range(5):
+            tx_en.append(event_str_en[TXT_ID[self.count * 5 + i]])
+            tx_cn.append(event_str_cn[TXT_ID[self.count * 5 + i]])
 
-        str_id = 'eventid = ' + self.list_cn[self.row] + '，id = ' + self.id_cn[self.col + 1]
+        self.en1.SetLabel(tx_en[0])
+        self.en2.SetLabel(tx_en[1])
+        self.en3.SetLabel(tx_en[2])
+        self.en4.SetLabel(tx_en[3])
+        self.en5.SetLabel(tx_en[4])
+
+        self.cn1.SetLabel(tx_cn[0])
+        self.cn2.SetLabel(tx_cn[1])
+        self.cn3.SetLabel(tx_cn[2])
+        self.cn4.SetLabel(tx_cn[3])
+        self.cn5.SetLabel(tx_cn[4])
+
+        str_id = 'eventid = ' + self.list_cn[self.row]
         self.staticText_id.SetLabel(str_id)
-        self.enText.SetValue(init_en)
-        self.cnText.SetValue(init_cn)
+
+
+        # value = self.cnText.GetValue()
+        # init_cn = self.dict_cn[self.list_cn[self.row]]
+        # init_cn[self.id_cn[self.col + 1]] = value
+        # self.col -= 1
+        # if self.col < 0:
+        #     self.col = len(self.id_cn) - 2
+        #     self.row -= 1
+        #     if self.row < 0:
+        #         self.row = len(self.list_cn) - 1
+        # key = self.list_cn[self.row]
+        # init_en = self.dict_en[key]
+        # # init_en = init_en[id_cn[self.col + 1]]
+        # while not init_en.__contains__(self.id_cn[self.col + 1]):
+        #     self.col -= 1
+        #     if self.col < 0:
+        #         self.col = len(self.id_cn) - 2
+        #         self.row -= 1
+        #         if self.row < 0:
+        #             self.row = len(self.list_cn) - 1
+        # init_en = init_en[self.id_cn[self.col + 1]]
+        # init_cn = self.dict_cn[self.list_cn[self.row]]
+        # init_cn = init_cn[self.id_cn[self.col + 1]]
+        # while init_cn == '':
+        #     self.col -= 1
+        #     if self.col < 0:
+        #         self.col = len(self.id_cn) - 2
+        #         self.row -= 1
+        #         if self.row < 0:
+        #             self.row = len(self.list_cn) - 1
+        #     key = self.list_cn[self.row]
+        #     init_en = self.dict_en[key]
+        #     # init_en = init_en[id_cn[self.col + 1]]
+        #     while not init_en.__contains__(self.id_cn[self.col + 1]):
+        #         self.col -= 1
+        #         if self.col < 0:
+        #             self.col = len(self.id_cn) - 2
+        #             self.row -= 1
+        #             if self.row < 0:
+        #                 self.row = len(self.list_cn) - 1
+        #     init_en = init_en[self.id_cn[self.col + 1]]
+        #     init_cn = self.dict_cn[self.list_cn[self.row]]
+        #     init_cn = init_cn[self.id_cn[self.col + 1]]
+        #
+        # str_id = 'eventid = ' + self.list_cn[self.row] + '，id = ' + self.id_cn[self.col + 1]
+        # self.staticText_id.SetLabel(str_id)
+        # self.enText.SetValue(init_en)
+        # self.cnText.SetValue(init_cn)
 
 
     def onClickDown(self, event):
         self.staticReform.SetLabel('')
-        value = self.cnText.GetValue()
-        init_cn = self.dict_cn[self.list_cn[self.row]]
-        init_cn[self.id_cn[self.col + 1]] = value
-        self.col += 1
-        if self.col >= (len(self.id_cn)-1):
-            self.col = 0
-            self.row += 1
-            if self.row >= len(self.list_cn):
-                self.row = 0
         key = self.list_cn[self.row]
-        init_en = self.dict_en[key]
-        # init_en = init_en[id_cn[self.col + 1]]
-        while not init_en.__contains__(self.id_cn[self.col + 1]):
-            self.col += 1
-        init_en = init_en[self.id_cn[self.col + 1]]
-        init_cn = self.dict_cn[self.list_cn[self.row]]
-        init_cn = init_cn[self.id_cn[self.col + 1]]
-        while init_cn == '':
-            self.col += 1
-            if self.col >= (len(self.id_cn) - 1):
-                self.col = 0
-                self.row += 1
-                if self.row >= len(self.list_cn):
-                    self.row = 0
+        tx_cn1 = self.cn1.GetValue()
+        tx_cn2 = self.cn2.GetValue()
+        tx_cn3 = self.cn3.GetValue()
+        tx_cn4 = self.cn4.GetValue()
+        tx_cn5 = self.cn5.GetValue()
+        str_cn = self.dict_cn[key]
+        str_cn[TXT_ID[self.count * 5 + 0]] = tx_cn1
+        str_cn[TXT_ID[self.count * 5 + 1]] = tx_cn2
+        str_cn[TXT_ID[self.count * 5 + 2]] = tx_cn3
+        str_cn[TXT_ID[self.count * 5 + 3]] = tx_cn4
+        str_cn[TXT_ID[self.count * 5 + 4]] = tx_cn5
 
-            key = self.list_cn[self.row]
-            init_en = self.dict_en[key]
-            while not init_en.__contains__(self.id_cn[self.col + 1]):
-                self.col += 1
-            init_en = init_en[self.id_cn[self.col + 1]]
-            init_cn = self.dict_cn[self.list_cn[self.row]]
-            init_cn = init_cn[self.id_cn[self.col + 1]]
+        self.count += 1
+        if self.count > 2:
+            self.count = 0
+            self.row += 1
+            if self.row > len(self.dict_cn) - 1:
+                self.row = 0
+        str_id = self.list_cn[self.row]
+        event_str_cn = self.dict_cn[str_id]
+        event_str_en = self.dict_en[str_id]
+        tx_en = []
+        tx_cn = []
+        for i in range(5):
+            tx_en.append(event_str_en[TXT_ID[self.count * 5 + i]])
+            tx_cn.append(event_str_cn[TXT_ID[self.count * 5 + i]])
 
-        str_id = 'eventid = ' + self.list_cn[self.row] + '，id = ' + self.id_cn[self.col + 1]
+        self.en1.SetLabel(tx_en[0])
+        self.en2.SetLabel(tx_en[1])
+        self.en3.SetLabel(tx_en[2])
+        self.en4.SetLabel(tx_en[3])
+        self.en5.SetLabel(tx_en[4])
+
+        self.cn1.SetLabel(tx_cn[0])
+        self.cn2.SetLabel(tx_cn[1])
+        self.cn3.SetLabel(tx_cn[2])
+        self.cn4.SetLabel(tx_cn[3])
+        self.cn5.SetLabel(tx_cn[4])
+
+        str_id = 'eventid = ' + self.list_cn[self.row]
         self.staticText_id.SetLabel(str_id)
-        self.enText.SetValue(init_en)
-        self.cnText.SetValue(init_cn)
+
+        # self.staticReform.SetLabel('')
+        # value = self.cnText.GetValue()
+        # init_cn = self.dict_cn[self.list_cn[self.row]]
+        # init_cn[self.id_cn[self.col + 1]] = value
+        # self.col += 1
+        # if self.col >= (len(self.id_cn)-1):
+        #     self.col = 0
+        #     self.row += 1
+        #     if self.row >= len(self.list_cn):
+        #         self.row = 0
+        # key = self.list_cn[self.row]
+        # init_en = self.dict_en[key]
+        # # init_en = init_en[id_cn[self.col + 1]]
+        # while not init_en.__contains__(self.id_cn[self.col + 1]):
+        #     self.col += 1
+        # init_en = init_en[self.id_cn[self.col + 1]]
+        # init_cn = self.dict_cn[self.list_cn[self.row]]
+        # init_cn = init_cn[self.id_cn[self.col + 1]]
+        # while init_cn == '':
+        #     self.col += 1
+        #     if self.col >= (len(self.id_cn) - 1):
+        #         self.col = 0
+        #         self.row += 1
+        #         if self.row >= len(self.list_cn):
+        #             self.row = 0
+        #
+        #     key = self.list_cn[self.row]
+        #     init_en = self.dict_en[key]
+        #     while not init_en.__contains__(self.id_cn[self.col + 1]):
+        #         self.col += 1
+        #     init_en = init_en[self.id_cn[self.col + 1]]
+        #     init_cn = self.dict_cn[self.list_cn[self.row]]
+        #     init_cn = init_cn[self.id_cn[self.col + 1]]
+        #
+        # str_id = 'eventid = ' + self.list_cn[self.row] + '，id = ' + self.id_cn[self.col + 1]
+        # self.staticText_id.SetLabel(str_id)
+        # self.enText.SetValue(init_en)
+        # self.cnText.SetValue(init_cn)
 
     def onClickSave(self, event):
         list_csv = []
@@ -263,20 +351,15 @@ class CleanerFrame(wx.Frame):
 
 
 if __name__ == '__main__':
-    # parser = argparse.ArgumentParser(description='data cleaner')
-    # group = parser.add_mutually_exclusive_group()
-    # parser.add_argument('-c', '--cnpath', help='CN path', type=str)
-    # parser.add_argument('-e', '--enpath', help='EN path', type=str)
-    # parser.add_argument('-i', '--id', help='ID', type=str)
-    # args = parser.parse_args()
-
+    # app = wx.App()
+    # dialog = readDialog()
+    # result = dialog.ShowModal()
+    # if result == wx.ID_CANCEL:
+    #     print('cancel')
+    # else:
+    #     pass
+    # dialog.Destroy()
     app = wx.App()
-    dialog = readDialog()
-    result = dialog.ShowModal()
-    if result == wx.ID_CANCEL:
-        print('cancel')
-    else:
-        pass
-    dialog.Destroy()
-
-# python3 data_cleaner.py -c 'Chinese.csv' -e 'English.csv', -i 197000000002
+    frame = CleanerFrame('Chinese.csv', 'English.csv', 197000000002)
+    frame.Show()
+    app.MainLoop()
