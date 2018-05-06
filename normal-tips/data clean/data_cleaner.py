@@ -47,7 +47,7 @@ def read_csv(path):
         dict_id[mesg[0].strip()] = dict_mesg
         dict_mesg = {}
 
-    return list_num, dict_id
+    return list_id, list_num, dict_id
 
 class readDialog(wx.Dialog):
     def __init__(self):
@@ -62,6 +62,8 @@ class readDialog(wx.Dialog):
         IDStaticText = wx.StaticText(panel, -1, '事件ID')
         self.idText = wx.TextCtrl(panel, value='', size=(230, 30))
         openButton = wx.Button(panel, label='OK', pos=(120, 100), size=(110, 30))
+        openButton.SetDefault()
+        # cancelButton = wx.Button(self, wx.ID_CANCEL, "Cancel", pos=(115, 30))
         sizer.Add(cnStaticText, 0)
         sizer.Add(self.cnText, 0)
         sizer.Add(enStaticText, 0)
@@ -92,8 +94,8 @@ class CleanerFrame(wx.Frame):
         wx.Frame.__init__(self, None, -1, "data clean",
                           size=(1000, 800))
 
-        self.list_cn, self.dict_cn = read_csv(cn_path)
-        self.list_en, self.dict_en = read_csv(en_path)
+        self.id_cn, self.list_cn, self.dict_cn = read_csv(cn_path)
+        self.id_en, self.list_en, self.dict_en = read_csv(en_path)
         self.row = self.list_cn.index(str(id))
         self.count = 0
         event_str_cn = self.dict_cn[str(id)]
@@ -114,10 +116,10 @@ class CleanerFrame(wx.Frame):
 
         panel = wx.Panel(self, -1)
         sizer = wx.BoxSizer(wx.VERTICAL)
-        upButton = wx.Button(panel, -1, '上一条', pos=(20, 500))
-        downButton = wx.Button(panel, -1, '下一条', pos=(150, 500))
+        upButton = wx.Button(panel, -1, '上一条', pos=(20, 450))
+        downButton = wx.Button(panel, -1, '下一条', pos=(150, 450))
         downButton.SetDefault()
-        saveButton = wx.Button(panel, -1, '保存', pos=(280, 500))
+        saveButton = wx.Button(panel, -1, '保存', pos=(280, 450))
         self.staticText_id = wx.StaticText(panel, -1, label=str_id, pos=(0, 10))
 
         staticText_en = wx.StaticText(panel, -1, label='EN', pos = (EN_COL, ROW))
@@ -134,7 +136,7 @@ class CleanerFrame(wx.Frame):
         self.cn4 = wx.TextCtrl(panel, value=tx_cn[3], pos=(CN_COL, ROW + 230), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
         self.cn5 = wx.TextCtrl(panel, value=tx_cn[4], pos=(CN_COL, ROW + 300), size=(400, 60),style=wx.TE_MULTILINE | wx.HSCROLL)
 
-        self.staticReform = wx.StaticText(panel, -1, label='', pos=(20, 300))
+        self.staticReform = wx.StaticText(panel, -1, label='', pos=(20, 400))
 
         sizer.Add(self.staticText_id, 0)
         sizer.Add(staticText_en, 0)
@@ -336,6 +338,18 @@ class CleanerFrame(wx.Frame):
         # self.cnText.SetValue(init_cn)
 
     def onClickSave(self, event):
+        key = self.list_cn[self.row]
+        tx_cn1 = self.cn1.GetValue()
+        tx_cn2 = self.cn2.GetValue()
+        tx_cn3 = self.cn3.GetValue()
+        tx_cn4 = self.cn4.GetValue()
+        tx_cn5 = self.cn5.GetValue()
+        str_cn = self.dict_cn[key]
+        str_cn[TXT_ID[self.count * 5 + 0]] = tx_cn1
+        str_cn[TXT_ID[self.count * 5 + 1]] = tx_cn2
+        str_cn[TXT_ID[self.count * 5 + 2]] = tx_cn3
+        str_cn[TXT_ID[self.count * 5 + 3]] = tx_cn4
+        str_cn[TXT_ID[self.count * 5 + 4]] = tx_cn5
         list_csv = []
         list_csv.append(self.id_cn)
         for i in range(len(self.list_cn)):
@@ -351,15 +365,11 @@ class CleanerFrame(wx.Frame):
 
 
 if __name__ == '__main__':
-    # app = wx.App()
-    # dialog = readDialog()
-    # result = dialog.ShowModal()
-    # if result == wx.ID_CANCEL:
-    #     print('cancel')
-    # else:
-    #     pass
-    # dialog.Destroy()
     app = wx.App()
-    frame = CleanerFrame('Chinese.csv', 'English.csv', 197000000002)
-    frame.Show()
-    app.MainLoop()
+    dialog = readDialog()
+    result = dialog.ShowModal()
+    if result == wx.ID_CANCEL:
+        print('cancel')
+    else:
+        pass
+    dialog.Destroy()
