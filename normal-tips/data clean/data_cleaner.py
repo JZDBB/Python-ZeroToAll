@@ -40,7 +40,7 @@ def read_csv(path):
         reader.append(row)
     list_id = reader[0]
     del reader[0]
-    for mesg in  reader:
+    for mesg in reader:
         list_num.append(mesg[0].strip())
         for i in range(len(list_id)-1):
             dict_mesg[list_id[i + 1]] = mesg[i + 1]
