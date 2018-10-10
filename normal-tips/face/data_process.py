@@ -1,5 +1,7 @@
 import cv2
 
+data_path = 'Img/img_align_celeba/img_align_celeba/'
+
 def detectFaces(img):
     face_cascade = cv2.CascadeClassifier("haarcascades/haarcascade_frontalface_default.xml")
     if img.ndim == 3:
@@ -17,43 +19,45 @@ def detectFaces(img):
 
 def main():
 
-    # list_name = []
-    # list_id = []
-    # dict_label = {}
-    #
-    # f = open("Anno/identity_CelebA.txt")
-    # for i in range(2000):
-    #     line = f.readline()
-    #     filename, id = line.split(' ')
-    #     if id in list_id:
-    #         continue
-    #     list_id.append(id)
-    #     list_name.append(filename)
-    # f.close()
-    #
-    # f = open("Anno/list_attr_celeba.txt")
-    # line = f.readline()
-    # line = f.readline()
-    # while line:
-    #     line = f.readline()
-    #     try:
-    #         filename, label = line.split('g')
-    #     except
-    #     filename = filename + 'g'
-    #     dict_label[filename] = label
-    #
-    # for file in list_name:
-    img = cv2.imread("Img/img_align_celeba/img_align_celeba/000001.jpg")
-    coordinate = detectFaces(img)
-    x1, y1, x2, y2 = coordinate[0]
-    # print(x1, y1, x2, y2)
-    # cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 1)
-    # cv2.imshow('', img)
-    # cv2.waitKey(0)
-    img = img[y1:y2, x1:x2]
-    img_save = cv2.resize(img, (256, 256), interpolation=cv2.INTER_CUBIC)
-    cv2.imwrite('Img/img_align_celeba/1.jpg', img_save)
-    print('ok')
+    list_name = []
+    list_id = []
+    dict_label = {}
+
+    f = open("Anno/identity_CelebA.txt")
+    for i in range(2000):
+        line = f.readline()
+        filename, id = line.split(' ')
+        if id in list_id:
+            continue
+        list_id.append(id)
+        list_name.append(filename)
+    f.close()
+
+    f = open("Anno/list_attr_celeba.txt")
+    line = f.readline()
+    line = f.readline()
+    for i in range(20000):
+        line = f.readline()
+        filename, label = line.split('g')
+        filename = filename + 'g'
+        dict_label[filename] = label
+    f.close()
+
+    for i in range(len(list_name)):
+        img = cv2.imread(data_path + list_name[i])
+        coordinate = detectFaces(img)
+        print(list_name[i])
+        try:
+            x1, y1, x2, y2 = coordinate[0]
+        except:
+            continue
+        img = img[y1:y2, x1:x2]
+        img_save = cv2.resize(img, (256, 256), interpolation=cv2.INTER_CUBIC)
+        name = list_id[i].strip('\n') + '.jpg'
+        img_name = data_path + 'processing_Data/' + name
+        cv2.imwrite(img_name, img_save)
+        with open(data_path + 'processing_Data/' + 'label.txt', 'a') as f:
+            f.write(name + dict_label[list_name[i]])
 
 if __name__ == '__main__':
     main()
