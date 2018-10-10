@@ -50,11 +50,9 @@ def main():
     # cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 1)
     # cv2.imshow('', img)
     # cv2.waitKey(0)
-    img = img[x1:x2, y1:y2]
-    # img_save = cv2.resize(img, (256, 256), interpolation=cv2.INTER_CUBIC)
-    cv2.imshow('', img)
-    cv2.waitKey(0)
-    # cv2.imwrite('1.jpg', img_save)
+    img = img[y1:y2, x1:x2]
+    img_save = cv2.resize(img, (256, 256), interpolation=cv2.INTER_CUBIC)
+    cv2.imwrite('Img/img_align_celeba/1.jpg', img_save)
     print('ok')
 
 if __name__ == '__main__':
