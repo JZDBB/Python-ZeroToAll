@@ -25,7 +25,7 @@ def main():
     dict_label = {}
 
     f = open("Anno/identity_CelebA.txt")
-    for i in range(3000):
+    for i in range(5000):
         line = f.readline()
         filename, id = line.split(' ')
         if id in list_id:
