@@ -1,4 +1,5 @@
 import cv2
+import os
 
 data_path = 'Img/img_align_celeba/img_align_celeba/'
 
@@ -24,7 +25,7 @@ def main():
     dict_label = {}
 
     f = open("Anno/identity_CelebA.txt")
-    for i in range(2000):
+    for i in range(3000):
         line = f.readline()
         filename, id = line.split(' ')
         if id in list_id:
@@ -58,6 +59,26 @@ def main():
         cv2.imwrite(img_name, img_save)
         with open(data_path + 'processing_Data/' + 'label.txt', 'a') as f:
             f.write(name + dict_label[list_name[i]])
+
+
+def select():
+    dict_label = {}
+    f = open("Anno/list_attr_celeba.txt")
+    line = f.readline()
+    line = f.readline()
+    while line:
+        line = f.readline()
+        filename, label = line.split('g')
+        filename = filename + 'g'
+        dict_label[filename] = label
+    f.close()
+
+    list_file = os.listdir(data_path + 'processing_Data/')
+    for filename in list_file:
+        with open(data_path + 'processing_Data/' + 'label.txt', 'a') as f:
+            f.write(filename + dict_label[filename])
+
+
 
 if __name__ == '__main__':
     main()
