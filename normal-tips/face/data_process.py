@@ -57,28 +57,29 @@ def main():
         name = list_id[i].strip('\n') + '.jpg'
         img_name = data_path + 'processing_Data/' + name
         cv2.imwrite(img_name, img_save)
-        with open(data_path + 'processing_Data/' + 'label.txt', 'a') as f:
+        with open(data_path + 'label.txt', 'a') as f:
             f.write(name + dict_label[list_name[i]])
 
 
 def select():
     dict_label = {}
-    f = open("Anno/list_attr_celeba.txt")
-    line = f.readline()
+    f = open(data_path + 'label.txt')
     line = f.readline()
     while line:
-        line = f.readline()
+        if line is None:
+            break
         filename, label = line.split('g')
         filename = filename + 'g'
         dict_label[filename] = label
+        line = f.readline()
     f.close()
 
     list_file = os.listdir(data_path + 'processing_Data/')
     for filename in list_file:
-        with open(data_path + 'processing_Data/' + 'label.txt', 'a') as f:
+        with open(data_path + 'processing_Data/' + 'select_label.txt', 'a') as f:
             f.write(filename + dict_label[filename])
 
 
 
 if __name__ == '__main__':
-    main()
+    select()
