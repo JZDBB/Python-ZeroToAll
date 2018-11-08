@@ -33,7 +33,7 @@ class HtmlOutputer(object):
     def output_execl(self, data, file, page):
         import codecs
         import sys
-        reload(sys)
+        # reload(sys) 版本问题引起的暂时注释日后修改
         sys.setdefaultencoding('utf8')
 
         headers = [u'id', u'pubtime', u'title', u'des', u'content', u'img', u'url', u'time',
@@ -46,4 +46,4 @@ class HtmlOutputer(object):
             if headerflag:
                 f_csv.writeheader()
             f_csv.writerows(data)
-        print 'page %d save to \'%s\' sucessfully!' % (page, file)
+        print('page %d save to \'%s\' sucessfully!' % (page, file))

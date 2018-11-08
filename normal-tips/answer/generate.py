@@ -2,8 +2,6 @@ import os
 import time
 import re
 import jinja2
-from selenium import webdriver
-from selenium.webdriver import DesiredCapabilities
 import cv2
 
 def load():

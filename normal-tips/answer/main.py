@@ -1,5 +1,4 @@
 import argparse
-import time
 import json
 import requests
 import pymongo
