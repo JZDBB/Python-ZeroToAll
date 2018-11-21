@@ -7,4 +7,3 @@ for i in range(len(a)):
     img = cv2.imread(path)
     path = '.\\1\\' + str(i) + '.jpg'
     cv2.imwrite(path, img)
-    
