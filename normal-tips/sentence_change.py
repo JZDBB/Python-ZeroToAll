@@ -25,25 +25,29 @@ def main():
     for one in mesg_list:
         key = one.pop(0)
         if key in dict_mesg:
-            dict_mesg[key] = dict_mesg[key] + ' '.join(one)
+            dict_mesg[key].append(' '.join(one))
         else:
-            dict_mesg[key] = ' '.join(one)
+            dict_mesg[key] = [' '.join(one)]
 
-    for key in dict_mesg.keys():
-        num = dict_mesg[key].count('.')
-        if num == 5:
-            filename = './result/' + key + '.txt'
-            f = open(filename, 'w+')
-            f.write(dict_mesg[key])
-            f.close()
-        else:
-            f = open('./result/error.txt', 'a+')
-            f.write(key + '\t')
-            f.write(dict_mesg[key])
-            f.write('\t')
-            f.write(str(num))
-            f.write('\n')
-            f.close()
+    for i in range(11000):
+        if str(i) in dict_mesg:
+            l1 = dict_mesg[str(i)]
+            mesg = sorted(set(l1), key=l1.index)
+            m = ' '.join(mesg)
+            num = m.count('.')
+            if num >= 5:
+                filename = './result/' + str(i) + '.txt'
+                f = open(filename, 'w+')
+                f.write(m)
+                f.close()
+            else:
+                f = open('./result/error.txt', 'a+')
+                f.write(str(i) + '\t')
+                f.write(m)
+                f.write('\t')
+                f.write(str(num))
+                f.write('\n')
+                f.close()
 
 
 
