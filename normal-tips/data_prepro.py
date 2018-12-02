@@ -8,7 +8,6 @@ filepath = 'captions.pickle'
 with open(filepath, 'rb') as f:
     filename = pickle.load(f)
 
-
 filenames = os.listdir('CV-text2face')
 f = open('bounding_boxes.txt', 'w') #不要频繁开启文件，容易出错
 f2 = open('images.txt', 'w')
