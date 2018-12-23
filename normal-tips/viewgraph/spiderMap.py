@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Get the data
-df=pd.read_csv("avengers_data.csv")
+df=pd.read_csv("avengers_csv.csv")
 print(df)
 
 """
