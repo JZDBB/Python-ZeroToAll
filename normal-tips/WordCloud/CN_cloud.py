@@ -76,34 +76,50 @@
 ###生成txt文件的词云
 
 import matplotlib.pyplot as plt
-from wordcloud import WordCloud
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import jieba
+from PIL import Image
+import numpy as np
+import os
+from os import path
 
-text = open("cv.txt", "rb").read()
+text = open("fenciHou1.txt", "rb").read().decode('utf-8')
+# text = open("cv.txt", "rb").read()
 # 结巴分词
-wordlist = jieba.cut(text, cut_all=True)
-wl = " ".join(wordlist)
+# wordlist = jieba.cut(text, cut_all=True)
+# wl = " ".join(wordlist)
 # print(wl)#输出分词之后的txt
-
-
+d = path.dirname(__file__) if "__file__" in locals() else os.getcwd()
+background_Image = np.array(Image.open(path.join(d, "1545566997_781739.png")))
+# or
+# background_Image = imread(path.join(d, "mask1900.jpg"))
+# 提取背景图片颜色
+img_colors = ImageColorGenerator(background_Image)
 # 把分词后的txt写入文本文件
-# fenciTxt  = open("fenciHou.txt","w+")
+# fenciTxt  = open("fenciHou.txt","w+", encoding='utf-8')
 # fenciTxt.writelines(wl)
 # fenciTxt.close()
 
 
 # 设置词云
-wc = WordCloud(background_color="white",  # 设置背景颜色
-               # mask = "图片",  #设置背景图片
-               max_words=2000,  # 设置最大显示的字数
+wc = WordCloud(background_color="black",  # 设置背景颜色
+               margin = 2, # 设置页面边缘
+               mask=background_Image,# mask = "图片",  #设置背景图片
+               max_words=500,  # 设置最大显示的字数
                # stopwords = "", #设置停用词
                font_path="fangsong_GB2312.ttf",
                # 设置中文字体，使得词云可以显示（词云默认字体是“DroidSansMono.ttf字体库”，不支持中文）
-               max_font_size=50,  # 设置字体最大值
+               max_font_size=200,  # 设置字体最大值
+               min_font_size=5, # 最小字号
+               collocations=False, # 不重复显示词语
+               colormap='viridis', # matplotlib 色图，可更改名称进而更改整体风格
                random_state=30,  # 设置有多少种随机生成状态，即有多少种配色方案
+               mode='RGB'
                )
-myword = wc.generate(wl)  # 生成词云
-
+myword = wc.generate(text)  # 生成词云
+wc.recolor(color_func=img_colors)
+    #存储图像
+wc.to_file('11.png')
 # 展示词云图
 plt.imshow(myword)
 plt.axis("off")
