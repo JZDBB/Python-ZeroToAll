@@ -119,7 +119,7 @@ wc = WordCloud(background_color="black",  # 设置背景颜色
 myword = wc.generate(text)  # 生成词云
 wc.recolor(color_func=img_colors)
     #存储图像
-wc.to_file('11.png')
+wc.to_file('12.png')
 # 展示词云图
 plt.imshow(myword)
 plt.axis("off")
