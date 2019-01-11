@@ -50,6 +50,41 @@ trace3 = go.Scatter(
 data1 = [trace3]
 py.plot(data1, filename='scatter-plot-with-colorscale')
 
+# 气泡图
+data2 = [
+    {
+        'x': [1, 3.2, 5.4, 7.6, 9.8, 12.5],
+        'y': [1, 3.2, 5.4, 7.6, 9.8, 12.5],
+        'mode': 'markers',
+        'markers': {
+            'color': [120, 125, 130, 135, 140, 145],
+            'size': [15, 30, 55, 70, 90, 110],
+            'showscale': True
+        }
+    }
+]
+py.plot(data2)
+
+# 柱状图
+
+trace4 = go.Bar (
+    x=['Jan', 'Feb','Mar','Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'oct', 'Nov', 'Dec'],
+    y=[20, 14, 25, 16,  18,  22, 19, 15, 12, 16, 14, 17],
+    name='Primary Product',
+    marker=dict(
+        color='rgb(49, 130, 189)'
+    )
+)
+trace5 = go.Bar (
+    x=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'oct', 'Nov', 'Dec'],
+    y=[19, 14, 22, 14, 16,  19, 15, 14, 10, 12, 12, 16],
+    name='Secondary Product',
+    marker=dict(
+      color='rgb(204, 204, 204)'
+    )
+)
+data3 = [trace4, trace5]
+py.iplot(data3)
 
 
 
