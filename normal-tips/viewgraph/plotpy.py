@@ -51,19 +51,19 @@ data1 = [trace3]
 py.plot(data1, filename='scatter-plot-with-colorscale')
 
 # 气泡图
-data2 = [
-    {
-        'x': [1, 3.2, 5.4, 7.6, 9.8, 12.5],
-        'y': [1, 3.2, 5.4, 7.6, 9.8, 12.5],
-        'mode': 'markers',
-        'markers': {
-            'color': [120, 125, 130, 135, 140, 145],
-            'size': [15, 30, 55, 70, 90, 110],
-            'showscale': True
-        }
-    }
-]
-py.plot(data2)
+# data2 = [
+#     {
+#         'x': [1, 3.2, 5.4, 7.6, 9.8, 12.5],
+#         'y': [1, 3.2, 5.4, 7.6, 9.8, 12.5],
+#         'mode': 'markers',
+#         'markers': {
+#             'color': [120, 125, 130, 135, 140, 145],
+#             'size': [15, 30, 55, 70, 90, 110],
+#             'showscale': True
+#         }
+#     }
+# ]
+# py.plot(data2)
 
 # 柱状图
 
@@ -84,10 +84,4 @@ trace5 = go.Bar (
     )
 )
 data3 = [trace4, trace5]
-py.iplot(data3)
-
-
-
-
-
-
+py.plot(data3)
