@@ -1,11 +1,3 @@
-# Script Name   : create_dir_if_not_there.py
-# Author        : Craig Richards
-# Created       : 09th January 2012
-# Last Modified : 22nd October 2015
-# Version       : 1.0.1
-# Modifications : Added exceptions
-#               : 1.0.1 Tidy up comments and syntax
-#
 # Description   : Checks to see if a directory exists in the users home directory, if not then create it
 
 import os  # Import the OS module

@@ -1,4 +1,4 @@
-# Description		: Displays some information about the OS you are running this script on
+# Description: Displays some information about the OS you are running this script on
 import platform as pl
 
 profile = [

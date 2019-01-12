@@ -1,4 +1,4 @@
-# Description			: Tests to see if the directory testdir exists, if not it will create the directory for you
+# Description: Tests to see if the directory testdir exists, if not it will create the directory for you
 from __future__ import print_function
 import os  # Import the OS Module
 import sys

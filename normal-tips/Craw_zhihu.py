@@ -1,6 +1,7 @@
 
 import json
 from urllib import request
+import pymongo
 
 
 def get_answers_by_page(topic_id, page_no):
@@ -9,7 +10,8 @@ def get_answers_by_page(topic_id, page_no):
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
     }
-    r = requests.get(url, verify=False, headers=headers)
+    # r = requests.get(url, verify=False, headers=headers) (for python2)
+    r = request.urlopen(url).read()
     content = r.content.decode("utf-8")
     data = json.loads(content)
     is_end = data["paging"]["is_end"]
