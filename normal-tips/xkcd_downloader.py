@@ -1,8 +1,5 @@
 """
-Written by: Shreyas Daniel - github.com/shreydan
-Written on: 26 April 2017
-
-Description: Download latest XKCD Comic with this program.
+cription: Download latest XKCD Comic with this program.
 
 NOTE:
 	if this script is launched from the cloned repo, a new folder is created.

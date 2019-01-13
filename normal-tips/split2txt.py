@@ -1,7 +1,5 @@
 import os
 
-
-
 def main():
     with open('汇总.txt', 'r+') as f:
         all_line = f.read()
