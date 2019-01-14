@@ -28,5 +28,15 @@
 #### Floders
 
 - [verification_code](https://github.com/nladuo/captcha-break) can auto recognize some verification code. (click and jump to another method.)
-- []
-
+- [answer]() Crawl the excellent reply in ZhiHu.
+- [Compression_Analysis]() compress the image with some noise.
+- [CountMillionCharacters]() is a function that can count the character numbers of a file.
+- [Crawl web page]() is a Crawler that can get the message of a web page.
+- [data clean]() An application that can see the error of English or Chinese.
+- [face]() recognize the face and extract from the picture.
+- [Google_Image_Downloader]() and [qt_sql]() and [html2pdf]() just like its name!
+- [listen_lesson]() it is a cheat tools that helps my mother auto listen the lessons on web.
+- [mosaic]() generate mosaic with thousands of picture.
+- [qrcode]() is a QR code generator.
+- [viewgrap]() Some ***Data Visualization*** methods
+- [WordCloud]() and [wxpython_tips]() just some tips of a tools.
