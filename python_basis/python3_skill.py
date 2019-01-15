@@ -289,9 +289,20 @@ def find(seq, target):
     第二种方法抽象层级更高，没有操作顺序出错的风险而且更效率更高。
 """
 
-
-
-
+"""
+    14、lambda表达式——【lambda 参数:操作(参数)】
+"""
+add = lambda x, y: x + y
+print(add(1, 2))
+#列表排序
+a = [(1, 2), (4, 1), (9, 10), (13, -3)]
+a.sort(key=lambda x: x[1])
+print(a)
+# 列表并行排序
+data = zip([1, 3, 2, 4, 8, 5], [7, 3, 8, 2, 0])
+data = sorted(data)
+list1, list2 = map(lambda t: list(t), zip(*data))
+print(list1, list2)
 
 
 
