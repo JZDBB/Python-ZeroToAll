@@ -304,8 +304,3 @@ data = sorted(data)
 list1, list2 = map(lambda t: list(t), zip(*data))
 print(list1, list2)
 
-
-
-
-
-
