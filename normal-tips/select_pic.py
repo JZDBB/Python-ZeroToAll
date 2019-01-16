@@ -1,4 +1,6 @@
 import wx
+import os
+import shutil
 
 class ImageWindow(wx.Window):
 
@@ -27,27 +29,54 @@ class AppFrame(wx.Frame):
         botBox = wx.BoxSizer(wx.HORIZONTAL)
         vbox.Add(topBox, 1, wx.EXPAND)
         vbox.Add(botBox)
+        self.filenames = os.listdir('data/')
+        self.btnA = wx.Button(self, wx.ID_ANY, 'ok')
+        self.Bind(wx.EVT_BUTTON, self.OnClick, self.btnA)
+        self.btnB = wx.Button(self, wx.ID_ANY, 'delete')
+        self.Bind(wx.EVT_BUTTON, self.OnClickD, self.btnB)
 
-        btnA = wx.Button(self, wx.ID_ANY, 'Button A')
-        # self.Bind(wx.EVT_BUTTON, self.OnClick, self.btnA)
-        btnB = wx.Button(self, wx.ID_ANY, 'Button B')
+        botBox.Add(self.btnA)
+        botBox.Add(self.btnB)
 
-        botBox.Add(btnA)
-        botBox.Add(btnB)
+        self.imw = ImageWindow(self, wx.ID_ANY)
+        topBox.Add(self.imw, 1, wx.EXPAND)
+        self.count = 0
+        self.filename = os.path.join('data', self.filenames[self.count])
+        image = wx.Image(self.filename, wx.BITMAP_TYPE_ANY)
+        # Scale the oiginal to another wx.Image
+        w = image.GetWidth()
+        h = image.GetHeight()
+        img2 = image.Scale(w / 2, h / 2)  # 缩小图像
 
-        imw = ImageWindow(self, wx.ID_ANY)
-        topBox.Add(imw, 1, wx.EXPAND)
-
-        image = wx.Image('LFPW_image_test_0071_2_LFPW_image_train_0294_0.jpg', wx.BITMAP_TYPE_JPEG)
-        imw.SetImage(image)
+        self.imw.SetImage(img2)
 
         self.SetSizer(vbox)
 
-    # def OnClick(self,evt):
-    # image = wx.Image('bbb.png', wx.BITMAP_TYPE_PNG)
+    def OnClick(self,evt):
+        full_path = self.filename.replace('data', 'new')
+        shutil.copy(self.filename, full_path)
+        self.count += 1
+        if self.count >= len(self.filenames):
+            self.count -= 1
+        self.filename = os.path.join('data', self.filenames[self.count])
+        image = wx.Image(self.filename, wx.BITMAP_TYPE_ANY)
+        # Scale the oiginal to another wx.Image
+        w = image.GetWidth()
+        h = image.GetHeight()
+        img2 = image.Scale(w / 3, h / 3)  # 缩小图像
+        self.imw.SetImage(img2)
 
-
-    # imw.SetImage(image)
+    def OnClickD(self, evt):
+        self.count += 1
+        if self.count >= len(self.filenames):
+            self.count -= 1
+        self.filename = os.path.join('data', self.filenames[self.count])
+        image = wx.Image(self.filename, wx.BITMAP_TYPE_ANY)
+        # Scale the oiginal to another wx.Image
+        w = image.GetWidth()
+        h = image.GetHeight()
+        img2 = image.Scale(w / 3, h / 3)  # 缩小图像
+        self.imw.SetImage(img2)
 
 
 class MyApplication(wx.App):
