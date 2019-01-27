@@ -27,4 +27,6 @@
 
 #### Floders
 
+- [verification_code](https://github.com/nladuo/captcha-break) can auto recognize some verification code. (click and jump to another method.)
+- []
 
