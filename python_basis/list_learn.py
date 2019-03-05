@@ -110,5 +110,11 @@ list_7.sort(reverse = True)
 print(list_7)
 
 print([i**2 for i in range(1,10)])
-print([i*j for j in range(1,i) for i in range(1,10) if j<=i])
+print([i*j for j in range(1, i) for i in range(1,10) if j<=i])
 print([m+n for m in 'ABC' for n in 'abc'])
+
+# 反转
+list_8 = ['a', 'b', 'c', 'd', 'e']
+print(list_8[::-1])
+
+
